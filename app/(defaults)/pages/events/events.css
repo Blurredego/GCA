@@ -68,3 +68,10 @@
  
    
 }
+
+@media screen and (min-width: 1350px) {
+   .box-events-container{
+   position: absolute;
+   }
+    
+}

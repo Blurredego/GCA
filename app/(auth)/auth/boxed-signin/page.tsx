@@ -4,10 +4,10 @@ import IconGoogle from '@/components/icon/icon-google';
 import IconInstagram from '@/components/icon/icon-instagram';
 import IconTwitter from '@/components/icon/icon-twitter';
 import LanguageDropdown from '@/components/language-dropdown';
-import { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
+import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Login Boxed',
 };

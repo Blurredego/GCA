@@ -1,16 +1,20 @@
 'use client';
 import { PropsWithChildren, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { IRootState } from '@/store';
+// import { IRootState } from '@/store';
 import { toggleRTL, toggleTheme, toggleMenu, toggleLayout, toggleAnimation, toggleNavbar, toggleSemidark } from '@/store/themeConfigSlice';
 import Loading from '@/components/layouts/loading';
 import { getTranslation } from '@/i18n';
-import Head from 'next/head';
 
-// import 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'
+// import { Metadata } from 'next';
+export const metadata = {
+    title: 'GCA Home',
+};
 
-function App({ children }: PropsWithChildren) {
-    const themeConfig = useSelector((state: IRootState) => state.themeConfig);
+
+
+function App({ children }) {
+    const themeConfig = useSelector((state) => state.themeConfig);
     const dispatch = useDispatch();
     const { initLocale } = getTranslation();
     const [isLoading, setIsLoading] = useState(true);
@@ -31,9 +35,6 @@ function App({ children }: PropsWithChildren) {
 
     return (
         <>
-            <Head>
-                <title>GCA</title>
-            </Head>
 
             <div
                 className={`${(themeConfig.sidebar && 'toggle-sidebar') || ''} ${themeConfig.menu} ${themeConfig.layout} ${

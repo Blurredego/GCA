@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Menu() {
     return (
         <>
-            <ul className="main-menu">
+            <ul className="main-menu ">
                 <li >
-                    <Link className="active" href="/">Home</Link>
+                    <Link className="" href="/" title="HOME">Home</Link>
                     {/* <ul className="sub-menu">
                         <li><Link href="/">Homepage - 1</Link></li>
                         <li><Link href="/index-2">Homepage - 2</Link></li>

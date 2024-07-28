@@ -7,20 +7,22 @@ import SliderEvent from './eventSlider';
 import EventVideoSlider from './EventVideoSlider';
 const Events = () => {
     return (
+   
         <Layout>
+         <title>Events</title>
             <div className="section d-block">
                 <div className="box-map-contact wow animate__animated animate__fadeIn relative  mx-auto w-full">
-                    <Image className="" src={'/assets/imgs/page/events/heroBgImg.png'} alt="Hero Image " width={4096} height={1492} />
+                    <Image  className="w-full h-full" src={'/assets/imgs/page/events/heroBgImg.png'} alt="Hero Image " width={4096} height={1492} />
 
-                    <div className="box-red-content absolute top-20  h-fit  w-full py-10 max-lg:top-7 max-md:top-5  xl:h-[250px]">
-                        <h1 className="color-main container font-extrabold max-lg:font-bold max-md:text-2xl">
+                    <div className="box-red-content absolute top-20  h-fit  w-full min-[1360px]:py-10 max-lg:top-7 max-md:top-5   min-[1440px]:h-[250px]">
+                        <h1 className="color-main container min-[1370px]:font-extrabold   font-bold max-md:text-2xl">
                             Global Freight Forwarders
-                            <br />
+                            <br  />
                             Conference
                         </h1>
                     </div>
 
-                    <div className="box-events-container bottom-0 w-full  xl:absolute ">
+                    <div className="box-events-container bottom-0 w-full    ">
                         <div className="box-card ">
                             <div className="flex w-full flex-wrap items-center justify-around gap-4">
                                 <div className="card-event">
@@ -102,10 +104,11 @@ const Events = () => {
                     </div>
                 </div>
             </div>
-            <h2 className="color-primary-main cnt-center mt-110 container mb-24 text-2xl lg:text-xl font-extrabold  ">2024 & 2025 UPCOMING EVENTS</h2>
-            <section className="section  ">
+            <h2 className="color-primary-main cnt-center mt-110  container text-2xl lg:text-xl font-extrabold  ">2024 & 2025 UPCOMING EVENTS</h2>
+
+            <section className="section mt-20 max-md:mt-32  ">
                 <div className="cnt-center position-relative container  max-lg:flex max-lg:flex-col-reverse  ">
-                    <div className="event-info-box p-30  top-10  max-lg:mx-4 max-lg:-mt-10 lg:absolute lg:h-[488px]  lg:w-[552px]  ">
+                    <div className="event-info-box p-30  top-10  max-lg:mx-1 max-lg:-mt-10 lg:absolute lg:h-[488px]  lg:w-[552px]  ">
                         <h2 className="wow animate__animated animate__fadeIn mb-20 text-white">Guangzhou, China</h2>
                         <p className="font-sm color-gray-700 wow animate__animated animate__fadeIn">Lorem Ipsum is simply dummyLorem Ipsum </p>
                         <div className="flex items-center gap-1">
@@ -140,12 +143,12 @@ const Events = () => {
                     </div>
                 </div>
             </section>
-            <section className="section mt-110 max-md:mt-32">
+            <section className="section  mt-110 max-md:mt-32">
                 <div className="cnt-center position-relative container  max-lg:flex max-lg:flex-col  ">
                     <div className="event-Image-box   ">
                         <Image src="/assets/imgs/page/events/event2.png" alt="event" width={1008} height={552} />
                     </div>
-                    <div className="event-info-box p-30 right-0  top-10  max-lg:mx-4 max-lg:-mt-10 lg:absolute lg:h-[488px]  lg:w-[552px]  ">
+                    <div className="event-info-box p-30 right-0  top-10  max-lg:mx-1 max-lg:-mt-10 lg:absolute lg:h-[488px]  lg:w-[552px]  ">
                         <h2 className="wow animate__animated animate__fadeIn mb-20 text-white">Guangzhou, China</h2>
                         <p className="font-sm color-gray-700 wow animate__animated animate__fadeIn">Lorem Ipsum is simply dummyLorem Ipsum </p>
                         <div className="flex items-center gap-1">
@@ -176,9 +179,9 @@ const Events = () => {
                     </div>
                 </div>
             </section>
-            <section className="section mt-110 max-md:mt-32">
+            <section className="section  mt-110 max-md:mt-32">
                 <div className="cnt-center position-relative container  max-lg:flex max-lg:flex-col-reverse  ">
-                    <div className="event-info-box p-30  top-10  max-lg:mx-4 max-lg:-mt-10 lg:absolute lg:h-[488px]  lg:w-[552px]  ">
+                    <div className="event-info-box p-30  top-10  max-lg:mx-1 max-lg:-mt-10 lg:absolute lg:h-[488px]  lg:w-[552px]  ">
                         <h2 className="wow animate__animated animate__fadeIn mb-20 text-white">Guangzhou, China</h2>
                         <p className="font-sm color-gray-700 wow animate__animated animate__fadeIn">Lorem Ipsum is simply dummyLorem Ipsum </p>
                         <div className="flex items-center gap-1">
@@ -213,12 +216,12 @@ const Events = () => {
                     </div>
                 </div>
             </section>
-            <section className="section mt-110 max-md:mt-32">
+            <section className="section  mt-110 max-md:mt-32">
                 <div className="cnt-center position-relative container  max-lg:flex max-lg:flex-col  ">
                     <div className="event-Image-box   ">
                         <Image src="/assets/imgs/page/events/event2.png" alt="event" width={1008} height={552} />
                     </div>
-                    <div className="event-info-box p-30 right-0  top-10  max-lg:mx-4 max-lg:-mt-10 lg:absolute lg:h-[488px]  lg:w-[552px]  ">
+                    <div className="event-info-box p-30 right-0  top-10  max-lg:mx-1 max-lg:-mt-10 lg:absolute lg:h-[488px]  lg:w-[552px]  ">
                         <h2 className="wow animate__animated animate__fadeIn mb-20 text-white">Guangzhou, China</h2>
                         <p className="font-sm color-gray-700 wow animate__animated animate__fadeIn">Lorem Ipsum is simply dummyLorem Ipsum </p>
                         <div className="flex items-center gap-1">
@@ -250,8 +253,8 @@ const Events = () => {
                 </div>
             </section>
 
-            <section className="section mt-110 w-full bg-white p-48 max-md:mt-32 max-md:p-20 ">
-                <div className="cnt-center container ">
+            <section className="section cnt-center mt-110 w-full bg-white p-48 max-md:mt-32 max-md:p-2 ">
+                <div className=" container ">
                     <SliderEvent />
                 </div>
             </section>
@@ -265,7 +268,7 @@ const Events = () => {
 
 
 
-            <section className="section mt-110 max-md:mt-32 mb-32">
+            <section className="section cnt-center mt-110 max-md:mt-32 mb-32">
             <div className="cnt-center container flex justify-center gap-10 max-md:flex-col ">
                 <div className=" bg-white p-4 lg:w-1/3 h-[218px] shadow-md shadow-black-dark-light rounded-md  flex flex-col justify-between ">
                     <h3 className="text-bold text-lg color-primary-main mb-2">Do you want to participate
@@ -290,6 +293,7 @@ const Events = () => {
                 </div>
             </section>
         </Layout>
+     
     );
 };
 

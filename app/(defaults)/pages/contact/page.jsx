@@ -3,6 +3,7 @@ import Layout from '../../components/layout/Layout';
 export default function Contact() {
     return (
         <Layout >
+         <title>Contact</title>
             <div className="section d-block">
                 <div className="box-map-contact wow animate__animated animate__fadeIn">
                     <iframe

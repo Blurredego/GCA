@@ -8,10 +8,9 @@ export default function Services() {
                     <h2 className=" mb-20 wow animate__animated animate__fadeIn">What We Offer </h2>
                     <div className="row align-items-end">
                         <div className="col-lg-10 col-md-8 mb-30">
-                            <p className="font-md color-gray-700 wow animate__animated animate__fadeIn">Welcome to our
-                                tranporation services agency. We are the best at our trans-portation service ever.</p>
+                            <p className="font-md color-gray-700 wow animate__animated animate__fadeIn">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been .</p>
                         </div>
-                        <div className="col-lg-2 col-md-4  mb-30 max-md:w-36 text-md-end text-start ">
+                        <div className="col-lg-2 col-md-4 text-nowrap  mb-30 max-md:w-36 text-md-end text-start ">
                         <Link className="btn btn-brand-1 hover-up shadow-none" href="/register">
 
                             <svg fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -26,91 +25,69 @@ export default function Services() {
                         <div className="row gap-4 justify-center justify-self-center">
                             <div className="lg:w-[30%]  col-md-5 wow animate__animated animate__fadeIn">
                                 <div className="card-offer hover-up">
-                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/cargo-ship.png" alt="transp" /></div>
+                                    <div className="card-image ">
+                                    <div className="w-[80px] h-[80px] rounded-full bg-[#DE2910] flex justify-center items-center  " >
+
+                                    <img src="/assets/imgs/page/homepage1/globalcard.png" alt="transp" />
+                                    </div>
+                                    
+                                    </div>
                                     <div className="card-info">
-                                        <h5 className=" mb-15">Sea Forwarding</h5>
-                                        <p className="font-sm color-grey-900 mb-35">We are professional in ocean freight with
-                                            more than 12 years of experience and have shipped more than 100k shipments.</p>
-                                        <div className="box-button-offer  mb-30 ">
-                                        <a className="btn btn-link font-sm ">View Details
-                                        <span>
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                            </svg></span></a></div>
+                                        <h5 className=" mb-15">Global Reach</h5>
+                                        <p className="font-sm color-grey-900 mb-35">Connect with a vast network of trusted freight forwarders worldwide. Our extensive global presence ensures that your cargo reaches any destination with efficiency and reliability.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="lg:w-[30%] col-md-5 wow animate__animated animate__fadeIn">
                                 <div className="card-offer hover-up">
-                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/plane.png" alt="transp" />
+                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/networking.png" alt="transp" />
                                     </div>
                                     <div className="card-info">
-                                        <h5 className="mb-15">Air Freight Forwarding</h5>
-                                        <p className="font-sm color-grey-900 mb-35">We are professional in ocean freight with
-                                            more than 12 years of experience and have shipped more than 100k shipments.</p>
-                                        <div className="box-button-offer mb-30"><a className="btn btn-link font-sm ">View Details<span>
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                            </svg></span></a></div>
+                                        <h5 className="mb-15">Networking Events</h5>
+                                        <p className="font-sm color-grey-900 mb-35">Participate in exclusive events designed to foster collaboration and build lasting relationships. Our networking opportunities allow you to connect with industry leaders and expand your business horizons.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="lg:w-[30%] col-md-5 wow animate__animated animate__fadeIn">
                                 <div className="card-offer hover-up">
-                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/delivery.png" alt="transp" />
+                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/financial.png" alt="transp" />
                                     </div>
                                     <div className="card-info">
-                                        <h5 className=" mb-15">Land Transportation</h5>
+                                        <h5 className=" mb-15">Financial Protection</h5>
+                                        <p className="font-sm color-grey-900 mb-35">Safeguard your transactions with our robust financial protection programs. GCA offers comprehensive solutions to minimize risk and provide peace of mind in your business dealings.</p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="lg:w-[30%] col-md-5 wow animate__animated animate__fadeIn">
+                                <div className="card-offer hover-up  " >
+                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/marketing.png" alt="transp" />
+                                    </div>
+                                    <div className="card-info">
+                                        <h5 className=" mb-15">Marketing &amp; Promotion </h5>
                                         <p className="font-sm color-grey-900 mb-35">We are professional in ocean freight with
                                             more than 12 years of experience and have shipped more than 100k shipments.</p>
-                                        <div className="box-button-offer mb-30"><a className="btn btn-link font-sm ">View Details<span>
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                            </svg></span></a></div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="lg:w-[30%] col-md-5 wow animate__animated animate__fadeIn">
+                                <div className="card-offer hover-up ">
+                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/GCA.png" alt="transp" />
+                                    </div>
+                                    <div className="card-info">
+                                        <h5 className=" mb-15">GCA Insurance</h5>
+                                        <p className="font-sm color-grey-900 mb-35">Protect your shipments with GCA's comprehensive insurance coverage. Our specialized insurance solutions are designed to meet the unique needs of freight forwarders, ensuring your cargo is secure at every stage.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="lg:w-[30%] col-md-5 wow animate__animated animate__fadeIn">
                                 <div className="card-offer hover-up">
-                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/forklift.png" alt="transp" />
-                                    </div>
+                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/news.png" alt="transp" /></div>
                                     <div className="card-info">
-                                        <h5 className=" mb-15">Warehouse &amp; Distribution</h5>
-                                        <p className="font-sm color-grey-900 mb-35">We are professional in ocean freight with
-                                            more than 12 years of experience and have shipped more than 100k shipments.</p>
-                                        <div className="box-button-offer mb-30"><a className="btn btn-link font-sm ">View Details<span>
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                            </svg></span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="lg:w-[30%] col-md-5 wow animate__animated animate__fadeIn">
-                                <div className="card-offer hover-up">
-                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/train.png" alt="transp" />
-                                    </div>
-                                    <div className="card-info">
-                                        <h5 className=" mb-15">Railway Logistics</h5>
-                                        <p className="font-sm color-grey-900 mb-35">We are professional in ocean freight with
-                                            more than 12 years of experience and have shipped more than 100k shipments.</p>
-                                        <div className="box-button-offer mb-30"><a className="btn btn-link font-sm ">View Details<span>
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                            </svg></span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="lg:w-[30%] col-md-5 wow animate__animated animate__fadeIn">
-                                <div className="card-offer hover-up">
-                                    <div className="card-image"><img src="/assets/imgs/page/homepage1/worldwide.png" alt="transp" /></div>
-                                    <div className="card-info">
-                                        <h5 className=" mb-15">Cross Border</h5>
-                                        <p className="font-sm color-grey-900 mb-35">We are professional in ocean freight with
-                                            more than 12 years of experience and have shipped more than 100k shipments.</p>
-                                        <div className="box-button-offer mb-30"><a className="btn btn-link font-sm ">View Details<span>
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                            </svg></span></a></div>
+                                        <h5 className=" mb-15">Latest News</h5>
+                                        <p className="font-sm color-grey-900 mb-35">Discover the most recent developments and insights in the logistics industry with our up-to-date news and articles.</p>
+                                      
                                     </div>
                                 </div>
                             </div>

@@ -9,7 +9,9 @@ import Layout from '../../components/layout/Layout';
 export default function About() {
     const [isOpen, setOpen] = useState(false);
     return (
+
         <Layout >
+            <title>About</title>
         <>
             <section className="section">
             {/* About Top Section */}

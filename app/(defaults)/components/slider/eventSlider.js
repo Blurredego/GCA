@@ -26,11 +26,11 @@ export  function EventSliderFirst() {
                 }}
                 breakpoints={{
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 3,
                         spaceBetween: 30,
                     },
                     575: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 30,
                     },
                     767: {
@@ -103,11 +103,11 @@ export  function EventSliderSecond() {
                 }}
                 breakpoints={{
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 3,
                         spaceBetween: 30,
                     },
                     575: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 30,
                     },
                     767: {
@@ -177,11 +177,11 @@ export  function EventSliderThird() {
                 }}
                 breakpoints={{
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 3,
                         spaceBetween: 30,
                     },
                     575: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 30,
                     },
                     767: {

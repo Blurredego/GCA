@@ -27,7 +27,7 @@ export default function BrandSlider() {
                 }}
                 breakpoints={{
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 3,
                         spaceBetween: 30,
                     },
                     575: {

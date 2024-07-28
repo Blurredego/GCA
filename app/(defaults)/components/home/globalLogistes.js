@@ -7,9 +7,9 @@ export default function Info() {
             <section className="section mt-85">
                 <div className="cnt-center container">
                     <div className='flex flex-col items-center text-center' >
-                        <Image className="mb-55 " src="/assets/imgs/template/logo.png" alt="transp" width={119.73} height={52} />
+                        <Image className="mb-10 " src="/assets/imgs/template/logo.png" alt="transp" width={119.73} height={52} />
                         <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Delivering Results for Industry Leaders</p>
-                        <h2 className="color-primary-main mb-65 mt-15 wow animate__animated animate__fadeIn">
+                        <h2 className="color-primary-main mb-20 mt-3 wow animate__animated animate__fadeIn">
                         Enhancing Global Logistics and 
                             <br className="d-none d-lg-block" />
                             Freight Forwarding Networks
@@ -26,11 +26,12 @@ export default function Info() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-5 col-lg-6 mb-30">
-                            <div className="box-info-pround">
+                        <div className="col-xl-5 col-lg-6 mb-30 " >
+                            <div className="box-info-pround  " >
                                 <h3 className="color-primary-main mb-15 wow animate__animated animate__fadeIn">Fast shipping with the most modern technology</h3>
                                 <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">
                                     Over the years, we have worked together to expand our network of partners to deliver reliability and consistency. We’ve also made significant strides to tightly
+                                    integrate technology with our processes, giving our clients greater visibility into every engagement.
                                     integrate technology with our processes, giving our clients greater visibility into every engagement.
                                 </p>
                                 <div className="mt-30">

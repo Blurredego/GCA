@@ -1433,13 +1433,13 @@ a:hover {
   color: #16BA8F;
 }
 
-@media (min-width: 1400px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 1410px;
-
+@media (min-width: 1450px) {
+  .container, .contaier-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: fit-content;
 
   }
 }
+
 .hover-up {
   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
@@ -2918,6 +2918,7 @@ body {
   margin-bottom: 30px;
   box-shadow: 0px 5px 30px rgba(19, 27, 34, 0.12);
   background-color: #ffffff;
+  height: 410px;
 }
 .card-offer:hover {
   box-shadow: 0px 10px 42px rgba(1, 9, 20, 0.06);
@@ -4540,7 +4541,7 @@ iframe {
 }
 .footer .menu-footer li a {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 28px;
   text-decoration: none;
@@ -9133,11 +9134,19 @@ for layout centerd
 */
 
 
-@layer components{
 
-    /* for content center */
+.cnt-center{
+    /* @apply mx-auto max-lg:px-10  max-md:px-12  max-sm:px-3 w-full;  */
+    
+    margin: 0px auto;
+
+}
+
+
+@media screen and (max-width: 1360px) {
     .cnt-center{
-        @apply mx-auto max-md:px-2  max-sm:px-3; 
-    }
-} 
-
+      /* width: 1280px; */
+      padding: 0px 25px;
+     
+  }
+}

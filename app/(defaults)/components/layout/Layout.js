@@ -11,6 +11,13 @@ import PageHead from './PageHead'
 import Sidebar from './MobileSidebar'
 import MapSection from '../../components/MapSection';
 
+export const metadata = {
+    title: 'GCA',
+    description: '',
+   
+  };
+  
+
 export default function Layout({ headerStyle, footerStyle, headTitle, children, topBarStyle }) {
     const [scroll, setScroll] = useState(0)
 
@@ -42,6 +49,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, children, 
         });
         window.wow.init();
     }, []);
+
 
     return (
         <main className='main-layout'>
