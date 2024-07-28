@@ -109,6 +109,7 @@ export default function Menu() {
                         <li><Link href="/pages/blog">Blog Details</Link></li>
                     </ul> */}
                 </li>
+                
                 <li><Link href="/pages/contact">Contact us</Link></li>
                 {/* <li><Link href="/pages/dashboard">Members</Link></li> */}
             </ul>
