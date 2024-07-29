@@ -110,7 +110,7 @@ export default function About() {
                 </div>
             </section>
             {/* Proud to Deliver Excellence Every Time Section */}
-            <section className="section mt-55 bg-1 position-relative pt-90 pb-90">
+            {/* <section className="section mt-55 bg-1 position-relative pt-90 pb-90">
                 <div className="container cnt-center">
                     <div className="row">
                         <div className="col-lg-6 color-main">
@@ -150,7 +150,7 @@ export default function About() {
                 </div>
                 <div className="box-image-touch box-image-info-2-2" />
             </section>
-          
+           */}
 
         </>
         </Layout>

@@ -14,13 +14,13 @@ const Home = () => {
 
     <title>GCA | Home</title>
     <Hero />
-    <Brands />
+    {/* <Brands /> */}
     <Services />
     <Info1 />
-    <Testimonial1 />
+    {/* <Testimonial1 /> */}
     <Cta1 />     
     <Faqs1 />       
-    <News1 />
+    {/* <News1 /> */}
     </>
   )
 }
