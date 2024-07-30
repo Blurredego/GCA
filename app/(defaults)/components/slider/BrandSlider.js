@@ -1,7 +1,7 @@
-'use client'
-import { Swiper, SwiperSlide } from "swiper/react";
+'use client';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from 'swiper';
 // import Image from "next/image";
 import 'swiper/swiper-bundle.min.css';
 
@@ -19,11 +19,11 @@ export default function BrandSlider() {
                 }}
                 pagination={{
                     clickable: true,
-                    el: '.swiper-pagination-banner'
+                    el: '.swiper-pagination-banner',
                 }}
                 navigation={{
-                    prevEl: ".swiper-button-prev-customers",
-                    nextEl: ".swiper-button-next-customers",
+                    prevEl: '.swiper-button-prev-customers',
+                    nextEl: '.swiper-button-next-customers',
                 }}
                 breakpoints={{
                     320: {
@@ -53,25 +53,31 @@ export default function BrandSlider() {
                 }}
                 className="swiper-wrapper wow animate__animated animate__fadeIn"
             >
-
                 <SwiperSlide>
-                <img src="/assets/imgs/slider/logo/alea.png" alt="transp" />
+                    <img src="/assets/imgs/slider/logo/alea.png" alt="transp" />
                 </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/land.png" alt="transp" />
+                <SwiperSlide>
+                    <img src="/assets/imgs/slider/logo/land.png" alt="transp" />
                 </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/logis.png" alt="transp" />
+                <SwiperSlide>
+                    <img src="/assets/imgs/slider/logo/logis.png" alt="transp" />
                 </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/truck.png" alt="transp" />
+                <SwiperSlide>
+                    <img src="/assets/imgs/slider/logo/truck.png" alt="transp" />
                 </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/saltos.png" alt="transp" />
+                <SwiperSlide>
+                    <img src="/assets/imgs/slider/logo/saltos.png" alt="transp" />
                 </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/creati.png" alt="transp" />
+                <SwiperSlide>
+                    <img src="/assets/imgs/slider/logo/creati.png" alt="transp" />
                 </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/logis.png" alt="transp" />
+                <SwiperSlide>
+                    <img src="/assets/imgs/slider/logo/logis.png" alt="transp" />
                 </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/truck.png" alt="transp" />
+                <SwiperSlide>
+                    <img src="/assets/imgs/slider/logo/truck.png" alt="transp" />
                 </SwiperSlide>
             </Swiper>
         </>
-    )
+    );
 }

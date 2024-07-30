@@ -86,22 +86,6 @@ export default function Service() {
                                 <div className="cardService">
                                     <div className="cardImage">
                                         {' '}
-                                            <Image className="h-fit w-fit" src={"/assets/imgs/page/services/financemainImg.png"} alt="gca" width={446} height={459} />
-                                     
-                                    </div>
-                                    <div className="cardInfo cursor-pointer">
-                                        {' '}
-                                     
-                                            <Image className="h-fit w-fit" src={financial.src} alt="Financial" width={43} height={43} />
-                                            <h6 className="color-brand-2">Financial Protection</h6>
-                                            <p className="font-xs color-grey-900">Risk Mitigation Assurance</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="mb-50 wow  animate__animated animate__fadeIn md:w-[40%] lg:w-[31%]">
-                                <div className="cardService">
-                                    <div className="cardImage">
-                                        {' '}
                                     
                                             <Image className="h-fit w-fit" src={"/assets/imgs/page/services/markitingmain.png"} alt="gca" width={446} height={459} />
                                     </div>
@@ -111,6 +95,22 @@ export default function Service() {
                                             <Image className="h-fit w-fit" src={marketing.src} alt="Marketing" width={43} height={43} />
                                             <h6 className="color-brand-2">Marketing and Promotion</h6>
                                             <p className="font-xs color-grey-900">Enhanced Market Visibility</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="mb-50 wow  animate__animated animate__fadeIn md:w-[40%] lg:w-[31%]">
+                                <div className="cardService">
+                                    <div className="cardImage">
+                                        {' '}
+                                    
+                                            <Image className="h-fit w-fit" src={"/assets/imgs/page/services/financemainImg.png"} alt="gca" width={446} height={459} />
+                                    </div>
+                                    <div className="cardInfo cursor-pointer">
+                                        {' '}
+                                      
+                                            <Image className="h-fit w-fit" src={financial.src} alt="Marketing" width={43} height={43} />
+                                            <h6 className="color-brand-2">Financial Protection</h6>
+                                            <p className="font-xs color-grey-900">Risk Mitigation Assurance</p>
                                     </div>
                                 </div>
                             </div>

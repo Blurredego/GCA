@@ -1,7 +1,10 @@
+'use client';
 import Link from 'next/link';
+import { useState } from 'react';
 import Layout from '../../components/layout/Layout';
 import Image from 'next/image';
 export default function About() {
+    const [isOpen, setOpen] = useState(false);
     return (
 
         <Layout >

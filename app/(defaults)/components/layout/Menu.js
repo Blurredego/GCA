@@ -1,11 +1,13 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Menu() {
     return (
         <>
             <ul className="main-menu ">
-                <li >
-                    <Link className="" href="/" title="HOME">Home</Link>
+                <li>
+                    <Link className="" href="/" title="HOME">
+                        Home
+                    </Link>
                     {/* <ul className="sub-menu">
                         <li><Link href="/">Homepage - 1</Link></li>
                         <li><Link href="/index-2">Homepage - 2</Link></li>
@@ -87,7 +89,7 @@ export default function Menu() {
                         </div>
                     </div> */}
                 </li>
-                <li >
+                <li>
                     <Link href="/pages/events">Events</Link>
                     {/* <ul className="sub-menu">
                         <li><Link href="/service-detail">Service Detail</Link></li>
@@ -109,8 +111,10 @@ export default function Menu() {
                         <li><Link href="/pages/blog">Blog Details</Link></li>
                     </ul> */}
                 </li>
-                
-                <li><Link href="/pages/contact">Contact us</Link></li>
+
+                <li>
+                    <Link href="/pages/contact">Contact us</Link>
+                </li>
                 {/* <li><Link href="/pages/dashboard">Members</Link></li> */}
             </ul>
         </>

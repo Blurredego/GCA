@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Hero from '../../components/home/Hero';
 import Brands from '../../components/home/Brands';
 import Services from '../../components/home/Services';
@@ -9,20 +9,19 @@ import Cta1 from '../../components/home/Cta';
 import News1 from '../../components/home/News';
 
 const Home = () => {
-  return (
-    <>
+    return (
+        <>
+            <title>GCA | Home</title>
+            <Hero />
+            {/* <Brands /> */}
+            <Services />
+            <Info1 />
+            {/* <Testimonial1 /> */}
+            <Cta1 />
+            <Faqs1 />
+            {/* <News1 /> */}
+        </>
+    );
+};
 
-    <title>GCA | Home</title>
-    <Hero />
-    {/* <Brands /> */}
-    <Services />
-    <Info1 />
-    {/* <Testimonial1 /> */}
-    <Cta1 />     
-    <Faqs1 />       
-    {/* <News1 /> */}
-    </>
-  )
-}
-
-export default Home
+export default Home;

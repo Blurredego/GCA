@@ -1,13 +1,13 @@
-import React from 'react'
-import {usePathname} from 'next/navigation';
+import React from 'react';
+import { usePathname } from 'next/navigation';
 const MapSection = () => {
-    const path = usePathname()
+    const path = usePathname();
 
-    if(path.match("login" || "register")){
-      return null;
+    if (path.match('login' || 'register')) {
+        return null;
     }
-    if(path.match("register")){
-      return null;
+    if (path.match('register')) {
+        return null;
     }
   return (
     <div className="section bg-map d-block mt-12">
@@ -25,8 +25,8 @@ const MapSection = () => {
                                     </div>
                     </div>
                 </div>
-            </div>
-  )
-}
+        </div>
+    );
+};
 
-export default MapSection
+export default MapSection;

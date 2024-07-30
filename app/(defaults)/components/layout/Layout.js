@@ -11,7 +11,6 @@ import MapSection from '../../components/MapSection';
 export const metadata = {
     title: 'GCA',
     description: 'GCA',
-    
 };
 
 export default function Layout({ headerStyle, headTitle, children, topBarStyle }) {

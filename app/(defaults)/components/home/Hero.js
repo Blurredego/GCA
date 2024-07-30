@@ -1,4 +1,4 @@
-import Hero1Slider from "../slider/HeroSlider";
+import Hero1Slider from '../slider/HeroSlider';
 import Link from 'next/link';
 import bannerImage from '../../../../public/assets/imgs/page/homepage1/banner.png';
 
@@ -13,8 +13,9 @@ export default function Hero() {
                                 <p className="font-md color-white mb-15 wow animate__animated animate__fadeIn" data-wow-delay=".0s">
                                     Your Gateway to Global Logistics Excellence
                                 </p>
-                                <h1 className="color-white   mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s" >
-                                    Connecting the World’s <br className="d-none d-lg-block" /><span> Independent Freight Forwarders</span>
+                                <h1 className="color-white   mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
+                                    Connecting the World’s <br className="d-none d-lg-block" />
+                                    <span> Independent Freight Forwarders</span>
                                 </h1>
                                 <div className="row">
                                     <div className="col-lg-6">
@@ -34,5 +35,5 @@ export default function Hero() {
                 </div>
             </section>
         </>
-    )
+    );
 }

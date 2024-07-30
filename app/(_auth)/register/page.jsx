@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Layout from '../../(defaults)/components/layout/Layout';
 import Brand1Slider from '../../(defaults)/components/home/Brands';
 import Link from 'next/link';
@@ -10,11 +10,12 @@ export default function Register() {
                     <div className="row align-items-center m-0 px-3">
                         <div className="col-lg-6">
                             <div className="box-login-left">
-                            <div className='text-center mb-10'>
-
-                                <h2 className="text-[#034460] lg:text-5xl   wow animate__animated animate__fadeIn ">Create an Account</h2>
-                                <p className="font-md color-grey-500 lg:px-12 wow animate__animated animate__fadeIn">Sign up now to access exclusive benefits and connect with a global community of independent freight forwarders.</p>
-                            </div>
+                                <div className="mb-10 text-center">
+                                    <h2 className="wow animate__animated   animate__fadeIn text-[#034460] lg:text-5xl ">Create an Account</h2>
+                                    <p className="font-md color-grey-500 wow animate__animated animate__fadeIn lg:px-12">
+                                        Sign up now to access exclusive benefits and connect with a global community of independent freight forwarders.
+                                    </p>
+                                </div>
                                 <div className="box-form-login wow animate__animated animate__fadeIn">
                                     <form action="#">
                                         <div className="row  justify-between">
