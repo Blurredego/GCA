@@ -19,7 +19,7 @@ export default function Hero() {
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <p className="font-md color-white wow animate__animated animate__fadeInUp mb-20" data-wow-delay=".0s">
-                                        Join a community dedicated to enhancing the capabilities of independent freight forwarders. Together, we create opportunities for growth and success in the global logistics market.
+                                        Join a community dedicated to enhancing the capabilities of independent freight forwarders. Together, we create opportunities for growth and success in the <br className="d-none d-lg-block" /><span> global logistics market.</span>
                                         </p>
                                     </div>
                                 </div>

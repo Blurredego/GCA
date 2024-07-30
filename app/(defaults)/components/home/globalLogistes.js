@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Info() {
     return (
@@ -26,9 +25,9 @@ export default function Info() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-5  col-lg-5 mb-30  px-5  max-lg:px-0">
-                            <div className="box-info-pround -mt-40 max-lg:-mt-0 " style={{}}>
-                                <h3 className="color-primary-main mb-15 wow animate__animated animate__fadeIn">Comprehensive Solutions Tailored for Independent Freight Forwarders</h3>
+                        <div className="col-xl-5  col-lg-5 mb-30  lg:px-5  max-lg:px-0">
+                            <div className="box-info-pround  -mt-40 max-lg:-mt-0 " style={{}}>
+                                <h3 className="color-primary-main mb-15  wow animate__animated animate__fadeIn">Comprehensive Solutions Tailored for Independent Freight Forwarders</h3>
                                 <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">
                                     We support the logistics and freight forwarding industry by providing a comprehensive network that connects professionals worldwide. Our platform offers vital
                                     information on Rates, Tariffs, and SOPs for container movements, helping members streamline their operations. By leveraging our extensive network, industry

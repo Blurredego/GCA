@@ -32,7 +32,7 @@ export default function Login() {
                                                     <button className="btn btn-brand-1-big mr-20 w-full text-lg" type="submit" defaultValue="Sign In">Login</button>
                                                 </div>
                                             </div>
-                                                <div className="box-text-form-login text-start my-2 font-normal"><span className="font-xs color-grey-500">Don't Have an Account?</span><Link className="font-xs color-brand-2" href="/register">Register Now</Link></div>
+                                                <div className="box-text-form-login text-start my-2 font-normal"><span className="font-xs color-grey-500">Don't Have an Account?</span><Link className="font-xs color-brand-2" href="/register"> Register Now</Link></div>
                                         </div>
                                     </form>
                                 </div>
@@ -43,13 +43,12 @@ export default function Login() {
                                 {/* <div className="quote-shape shape-1" /> */}
                                 <div className="box-info-bottom-img box-info-bottom-img-3 flex flex-col items-start" style={{ width: '291px' }}>
                                     <div>
-                                        <h4 className="color-white mb-15">We have 25 years</h4>
                                         <p className="font-sm color-white">
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+                                        Geo Cargo Alliance (GCA) unites independent freight forwarders globally, offering a network that enhances connectivity and delivers key resources for success in logistics.
                                         </p>
                                     </div>
                                     <div className="mt-30 wow animate__animated animate__fadeIn">
-                                        <Link className="btn btn-link font-sm " href="#" style={{ color: 'white' }}>
+                                        <Link className="btn underline btn-link font-sm " href="#" style={{ color: 'white' }}>
                                             View Details
                                             <span className='bg-white '>
                                                 <svg   style={{ color: 'black' }} className="icon-16 h-10 w-6 text-black " fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

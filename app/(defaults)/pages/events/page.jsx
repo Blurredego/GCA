@@ -270,7 +270,7 @@ const Events = () => {
 
             <section className="section cnt-center mt-110 max-md:mt-32 mb-32">
             <div className="cnt-center container flex justify-center gap-10 max-md:flex-col ">
-                <div className=" bg-white p-4 lg:w-1/3 h-[218px] shadow-md shadow-black-dark-light rounded-md  flex flex-col justify-between ">
+                <div className=" bg-white p-4   lg:w-1/3 h-[218px] shadow-md shadow-black-dark-light rounded-md  flex flex-col justify-between ">
                     <h3 className="text-bold text-lg color-primary-main mb-2">Do you want to participate
                     <br/>
                      in any events?</h3>
@@ -281,7 +281,7 @@ const Events = () => {
                         </svg>
                     </Link>
                 </div>
-                <div className=" bg-white p-4  lg:w-1/3 h-[218px] shadow-md shadow-black-dark-light rounded-md flex flex-col justify-between  ">
+                <div className=" bg-white p-4   lg:w-1/3 h-[218px] shadow-md shadow-black-dark-light rounded-md flex flex-col justify-between  ">
                     <h3 className="text-bold text-lg color-primary-main mb-2">Do you have any question?</h3>
                     <Link className="btn btn-brand-2 wow  animate__animated animate__fadeIn mr-20 flex h-8 text-nowrap px-2 w-fit" href="#">
                         CONTACT

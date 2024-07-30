@@ -15,7 +15,7 @@ export default function Menu() {
                 </li>
                 <li><Link href="/pages/about">About Us</Link></li>
                 <li >
-                    <Link href="/pages/services">Services</Link>
+                    <Link href="/pages/benefits">Benefits</Link>
                     {/* <div className="sub-menu grid grid-cols-5 gap-4">
                         <div className="menu-col">
                             <h6 className="color-brand-2 mb-4">Sea Forwarding</h6>
@@ -104,7 +104,7 @@ export default function Menu() {
                     </ul> */}
                 </li>
                 <li >
-                    <Link href="/pages/blog">News</Link>
+                    <Link href="/pages/blogs">News</Link>
                     {/* <ul className="sub-menu">
                         <li><Link href="/pages/blog">Blog Details</Link></li>
                     </ul> */}

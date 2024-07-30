@@ -83,7 +83,7 @@ export default function Contact() {
                                                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
                                                 />
                                             </svg>
-                                            Phone: +01-246-357 (Any time 24/7)
+                                            Phone: +852 3997 3380 (Any time 24/7)
                                         </p>
                                         <p className="   mb-30 wow animate__animated animate__fadeIn">
                                             <svg
@@ -101,7 +101,7 @@ export default function Contact() {
                                                     d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                                                 />
                                             </svg>
-                                            Email: contact@transp.eu.com
+                                            Email: Info@gcahkg.com
                                         </p>
                                         <div className="line-border mb-25" />
                                         <p className="font-md-bold wow animate__animated animate__fadeIn">Hours: 8:00 - 17:00, Mon - Sat</p>
@@ -112,18 +112,17 @@ export default function Contact() {
                     </div>
                 </div>
             </section>
-            <section className="section mt-100">
+            {/* <section className="section mt-100">
                 <div className="cnt-center container">
                     <h2 className="color-primary-main wow animate__animated animate__fadeIn mb-20">
-                        We have branches in many
-                        <br className="d-none d-lg-block" />
-                        regions of the world
+                    We have branches in many
+                        <br className="d-none d-lg-block" /><span> regions of the world</span>
+
                     </h2>
                     <div className="row flex justify-between">
                         <div className="col-lg-6 col-md-6 mb-30">
                             <p className="font-md color-gray-700 wow animate__animated animate__fadeIn">
-                                We has experience in handling the formalities and documentation required for your imports and exports. We work with all international station to guarantee that your
-                                load will safely reach without any delays.
+                            With branches spanning key regions around the world, Geo Cargo Alliance (GCA) brings extensiv e  experience and localized knowledge to the global logistics industry. Our global presence ensures we provide insightful solutions and reliable support tailored to diverse markets, leveraging our deep understanding of regional dynamics and international standards.
                             </p>
                         </div>
                         <div className="col-lg-6 col-md-6 mb-30 text-md-end text-start w-fit">
@@ -148,7 +147,7 @@ export default function Contact() {
                                         <strong className="color-brand-2">Phone Number:</strong>+1-555-555-5555
                                     </p>
                                     <p className="font-xs color-grey-900">
-                                        <strong className="color-brand-2">Email:</strong>contact@transp.eu.com
+                                        <strong className="color-brand-2">Email:</strong>contact@demo.eu.com
                                     </p>
                                 </div>
                             </div>
@@ -208,14 +207,14 @@ export default function Contact() {
                                         <strong className="color-brand-2">Phone Number:</strong>+971 4 887 8000
                                     </p>
                                     <p className="font-xs color-grey-900">
-                                        <strong className="color-brand-2">Email:</strong>contact@transp.eu.com
+                                        <strong className="color-brand-2">Email:</strong>contact@demo.eu.com
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
    
             <div className="mt-20" />
            

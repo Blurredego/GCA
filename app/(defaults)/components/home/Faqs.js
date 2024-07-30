@@ -18,23 +18,23 @@ export default function Faqs() {
                
                 </p>
                 <div className="box-gallery-faqs">
-                  <div className="image-top">
+                  <div className="image-top wow animate__animated animate__fadeIn">
                     <img
                       src="/assets/imgs/page/homepage1/img-faq1.png"
-                      alt="transp"
+                      alt="Gca FAQs"
                     />
                   </div>
-                  <div className="image-bottom">
+                  <div className="image-bottom wow animate__animated animate__fadeIn">
                     <div className="image-faq-1">
                       <img
                         src="/assets/imgs/page/homepage1/img-faq2.png"
-                        alt="transp"
+                        alt="Gca FAQs"
                       />
                     </div>
-                    <div className="image-faq-2">
+                    <div className="image-faq-2 wow animate__animated animate__fadeIn">
                       <img
                         src="/assets/imgs/page/homepage1/img-faq3.png"
-                        alt="transp"
+                        alt="Gca FAQs"
                       />
                     </div>
                   </div>

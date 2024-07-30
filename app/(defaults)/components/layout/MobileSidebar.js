@@ -58,12 +58,12 @@ export default function Sidebar({ openClass, handleMobileMenuClose }) {
                                         </li>
                                         <li className={isActive.key == 2 ? 'has-children active' : 'has-children'} onClick={() => handleToggle(2)}>
                                            
-                                            <Link href="/pages/events">Event</Link>
+                                            <Link href="/pages/benefits">Benefits</Link>
                                            
                                         </li>
                                         <li className={isActive.key == 3 ? 'has-children active' : 'has-children'} onClick={() => handleToggle(3)}>
                                            
-                                            <Link href="/pages/contact">contact</Link>
+                                            <Link href="/pages/events">Events</Link>
                                            
                                         </li>
                                         <li className={isActive.key == 4 ? 'has-children active' : 'has-children'} onClick={() => handleToggle(4)}>
@@ -72,7 +72,7 @@ export default function Sidebar({ openClass, handleMobileMenuClose }) {
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                                                 </svg>
                                             </span> */}
-                                            <Link href="/pages/services">Services</Link>
+                                            <Link href="/pages/blogs">News</Link>
                                             {/* <ul className={isActive.key == 4 ? 'sub-menu d-block' : 'sub-menu d-none'}>
                                                 <li>
                                                     <Link href="/blog-single">Blog Details</Link>
@@ -80,7 +80,7 @@ export default function Sidebar({ openClass, handleMobileMenuClose }) {
                                             </ul> */}
                                         </li>
                                         <li>
-                                            <Link href="/contact">Contact</Link>
+                                            <Link href="/pages/contact">Contact</Link>
                                         </li>
                                     </ul>
                                 </nav>

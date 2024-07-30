@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer1({}) {
+    const googleMapsUrl =
+        'https://www.google.com/maps/search/?api=1&query=Unit+39%2C14%2FF%2C+Block+D%2C+Wah+Lok+Industrial+Centre%2C+No.31-35+Shan+Mei+Street%2C+Fo+Tan%2C+Shatin%2C+New+Territories%2C+Hong+Kong';
     return (
         <>
             <footer className="footer">
@@ -10,17 +12,16 @@ export default function Footer1({}) {
                         <div className="row">
                             <div className="col-lg-4   mb-30">
                                 <div className="mb-20">
-                                    <Image src="/assets/imgs/template/logo-footer.png" alt="transp" width={182.62} height={80} />
+                                    <Image src="/assets/imgs/template/logo.png" alt="GCA" width={182.62} height={80} />
                                 </div>
-                                <p className="font-xs color-white lg:w-[327px]  my-6 pr-3">
+                                <p className="font-xs my-6  pr-3 lg:w-[327px]">
                                     Connecting freight forwarders worldwide, our platform fosters networking, collaboration, and business opportunities within the logistics industry. At GCA, we
                                     understand that the modern logistics landscape demands more than just connections; it requires a dynamic, supportive, and innovative community. That's why we've
                                     created a network that empowers independent freight forwarders to thrive in an increasingly competitive market.
                                 </p>
-                               
                             </div>
                             <div className="col-lg-2 col-md-3 col-sm-4 mb-30">
-                                <h5 className="color-main mb-10">Quick Links</h5>
+                                <h5 className="color-brand-1  mb-10">Quick Links</h5>
                                 <ul className="menu-footer">
                                     <li>
                                         <Link href="/">Home</Link>
@@ -29,7 +30,7 @@ export default function Footer1({}) {
                                         <Link href="/pages/about">About Us</Link>
                                     </li>
                                     <li>
-                                        <Link href="/pages/services">Services</Link>
+                                        <Link href="/pages/benefits">Benefits</Link>
                                     </li>
                                     <li>
                                         <Link href="/pages/events">Events</Link>
@@ -40,7 +41,7 @@ export default function Footer1({}) {
                                 </ul>
                             </div>
                             <div className="col-lg-2  col-md-3 col-sm-4  mb-30">
-                                <h5 className="color-main mb-10">Members</h5>
+                                <h5 className="color-brand-1  mb-10">Members</h5>
                                 <ul className="menu-footer">
                                     <li>
                                         <Link href="#">Profile</Link>
@@ -57,20 +58,29 @@ export default function Footer1({}) {
                                 </ul>
                             </div>
                             <div className="col-lg-2  col-md-3 col-sm-4 mb-30">
-                                <h5 className="color-main mb-10">Contact Us</h5>
+                                <h5 className="color-brand-1  mb-10">Contact Us</h5>
                                 <ul className="menu-footer">
                                     <li>
-                                        <Link href="#">Demo@email.com</Link>
+                                        <Link href="#">Info@gcahkg.com</Link>
                                     </li>
-                                    <li> <Link href="#" >  +01-246-357 (Any time 24/7)</Link></li>
-                                    <li><Link href="#" >  2972 Westheimer Rd. Santa Ana, Illinois 85486</Link></li>
+                                    <li>
+                                        {' '}
+                                         +852 3997 3380 (Any time 24/7)
+                                    </li>
+                                    <li>
+                                        {' '}
+                                        <Link href={googleMapsUrl} target="_blank" rel="noopener noreferrer">
+                                            Unit 39,14/F, Block D, Wah Lok Industrial Centre, No.31-35 Shan Mei Street, Fo Tan, Shatin, New Territories, Hong Kong
+                                        </Link>
+                                    </li>
                                 </ul>
-                                <div className="mt-15">
-                                    <Link className="icon-socials icon-facebook" href="#" />
-                                    <Link className="icon-socials icon-instagram" href="#" />
-                                    <Link className="icon-socials icon-twitter" href="#" />
-                                    <Link className="icon-socials icon-youtube" href="#" />
-                                    <Link className="icon-socials icon-skype" href="#" />
+                                <div className="mt-15 ">
+                                    <Link className="icon-socials icon-linkedin" href="https://www.linkedin.com/company/gcahkg" style={{ color: 'black' }} />
+                                    <Link className="icon-socials icon-facebook " href="https://web.facebook.com/gcahkg" style={{ color: 'black' }} />
+                                    <Link className="icon-socials icon-instagram" href="https://instagram.com/gcahkg" style={{ color: 'black' }} />
+                                    <Link className="icon-socials icon-twitter" href="https://x.com/gcahkg" style={{ color: 'black' }} />
+                                    <Link className="icon-socials icon-youtube" href="https://www.linkedin.com/company/gcahkg" style={{ color: 'black' }} />
+                                    {/* <Link className="icon-socials icon-skype" href="#"  style={{color:'black'}}/> */}
                                 </div>
                             </div>
                         </div>

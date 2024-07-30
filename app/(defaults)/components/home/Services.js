@@ -27,7 +27,7 @@ export default function Services() {
                     </div>
                     <div className="mt-20 box-background-offer  ">
                     
-                        <div className="bg-under" />
+                        <div className="bg-under max-[600px]:hidden" />
                         <div className="row gap-4 justify-center justify-self-center">
                             <div className="lg:w-[30%]  col-md-5 wow animate__animated animate__fadeIn">
                                 <div className="card-offer hover-up">

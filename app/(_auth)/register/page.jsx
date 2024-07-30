@@ -25,7 +25,7 @@ export default function Register() {
                                             </div>
                                             <div className="col-md-6">
                                                 <div className="form-group">
-                                                    <input className="form-control" name="" type="text" placeholder="Phone Number" />
+                                                    <input className="form-control" name="" type="text" placeholder="Phone Number*" />
                                                 </div>
                                             </div>
 
@@ -84,7 +84,7 @@ export default function Register() {
                                                     <input className="btn btn-brand-1-big mr-20" type="submit" defaultValue="Create Account" />
                                                 </div>
                                                 <div className="box-text-form-login">
-                                                    <span className="font-xs color-grey-500">Already have an account?</span>
+                                                    <span className="font-xs color-grey-500">Already have an account? </span>
                                                     <Link className="font-xs color-brand-2" href="/login">
                                                         Sign In
                                                     </Link>
@@ -97,17 +97,15 @@ export default function Register() {
                         </div>
                         <div className="col-lg-6">
                             <div className="box-login-right">
-                                {/* <div className="quote-shape shape-1" /> */}
                                 <div className="box-info-bottom-img box-info-bottom-img-3 flex flex-col items-start " >
                                     <div>
-                                        <h4 className="color-white mb-15">We have 25 years</h4>
                                         <p className="font-sm color-white ">
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+                                        Geo Cargo Alliance (GCA) unites independent freight forwarders globally, offering a network that enhances connectivity and delivers key resources for success in logistics.
                                         </p>
                                     </div>
-                                    <div className="mt-30 wow animate__animated animate__fadeIn">
+                                    <div className="mt-30 underline wow animate__animated animate__fadeIn">
                                         <Link className="btn btn-link font-sm " href="#" style={{ color: 'white' }}>
-                                            View Details
+                                            Read More
                                             <span className='bg-white '>
                                                 <svg   style={{ color: 'black' }} className="icon-16 h-10 w-6 text-black " fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
