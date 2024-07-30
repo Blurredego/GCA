@@ -6,11 +6,11 @@ export default function Info() {
         <>
             <section className="section mt-85">
                 <div className="cnt-center container">
-                    <div className='flex flex-col items-center text-center' >
+                    <div className="flex flex-col items-center text-center">
                         <Image className="mb-10 " src="/assets/imgs/template/logo.png" alt="transp" width={119.73} height={52} />
                         <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Delivering Results for Industry Leaders</p>
-                        <h2 className="color-primary-main mb-20 mt-3 wow animate__animated animate__fadeIn">
-                        Enhancing Global Logistics and 
+                        <h2 className="color-primary-main wow animate__animated animate__fadeIn mb-20 mt-3">
+                            Enhancing Global Logistics and
                             <br className="d-none d-lg-block" />
                             Freight Forwarding Networks
                         </h2>
@@ -26,55 +26,15 @@ export default function Info() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-5 col-lg-6 mb-30 " >
-                            <div className="box-info-pround  " >
-                                <h3 className="color-primary-main mb-15 wow animate__animated animate__fadeIn">Fast shipping with the most modern technology</h3>
+                        <div className="col-xl-5  col-lg-5 mb-30  px-5  max-lg:px-0">
+                            <div className="box-info-pround -mt-40 max-lg:-mt-0 " style={{}}>
+                                <h3 className="color-primary-main mb-15 wow animate__animated animate__fadeIn">Comprehensive Solutions Tailored for Independent Freight Forwarders</h3>
                                 <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">
-                                    Over the years, we have worked together to expand our network of partners to deliver reliability and consistency. We’ve also made significant strides to tightly
-                                    integrate technology with our processes, giving our clients greater visibility into every engagement.
-                                    integrate technology with our processes, giving our clients greater visibility into every engagement.
+                                    We support the logistics and freight forwarding industry by providing a comprehensive network that connects professionals worldwide. Our platform offers vital
+                                    information on Rates, Tariffs, and SOPs for container movements, helping members streamline their operations. By leveraging our extensive network, industry
+                                    professionals can efficiently manage their supply chains, optimize container movements, and expand their global reach. Our commitment is to foster a robust
+                                    community dedicated to excellence in logistics and freight forwarding.
                                 </p>
-                                <div className="mt-30">
-                                    <ul className="list-ticks">
-                                        <li className="wow animate__animated animate__fadeIn">
-                                            <svg className="icon-16 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            Task tracking
-                                        </li>
-                                        <li className="wow animate__animated animate__fadeIn">
-                                            <svg className="icon-16 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            Create task dependencies
-                                        </li>
-                                        <li className="wow animate__animated animate__fadeIn">
-                                            <svg className="icon-16 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            Task visualization
-                                        </li>
-                                        <li className="wow animate__animated animate__fadeIn">
-                                            <svg className="icon-16 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            hare files, discuss
-                                        </li>
-                                        <li className="wow animate__animated animate__fadeIn">
-                                            <svg className="icon-16 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            Meet deadlines faster
-                                        </li>
-                                        <li className="wow animate__animated animate__fadeIn">
-                                            <svg className="icon-16 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            Track time spent on each project
-                                        </li>
-                                    </ul>
-                                </div>
-                             
                             </div>
                         </div>
                     </div>

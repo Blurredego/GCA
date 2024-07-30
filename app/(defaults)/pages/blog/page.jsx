@@ -479,12 +479,10 @@ export default function Blog() {
                 <div className="mt-70" />
 
                 {/* Brand section  */}
-                <section>
+                {/* <section>
                     <BrandSlider />
-                </section>
+                </section> */}
                 <div className="mt-70" />
-
-             
             </>
         </Layout>
     );

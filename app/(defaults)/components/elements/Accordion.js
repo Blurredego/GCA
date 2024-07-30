@@ -1,5 +1,5 @@
 'use client';
-import { useState } from "react";
+import { useState } from 'react';
 
 export default function Accordion() {
     const [isActive, setIsActive] = useState({
@@ -24,74 +24,67 @@ export default function Accordion() {
             <div className="accordion" id="accordionFAQ">
                 <div className="accordion-item wow animate__animated animate__fadeIn">
                     <h5 className="accordion-header" onClick={() => handleToggle(1)}>
-                        <button className={isActive.key == 1 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>How can I return an item
-                            purchased online?</button>
+                        <button className={isActive.key == 1 ? 'accordion-button text-heading-5 ' : 'accordion-button text-heading-5 collapsed'}>What is the main purpose of your platform?</button>
                     </h5>
-                    <div className={isActive.key == 1 ? "accordion-collapse" : "accordion-collapse collapse"}>
-                        <div className="accordion-body">Contrary to popular belief, Lorem Ipsum is not
-                            simply random text. It has roots in a piece of classical Latin literature Id
-                            pro doctus mediocrem erroribus, diam nostro sed cu. Ea pri graeco tritani
-                            partiendo. Omittantur No tale choro fastidii his, pri cu epicuri perpetua.
-                            Enim dictas omittantur et duo, vocent lucilius quaestio mea ex. Ex illum
-                            officiis id.</div>
+                    <div className={isActive.key == 1 ? 'accordion-collapse' : 'accordion-collapse collapse'}>
+                        <div className="accordion-body">
+                            Our platform is designed to connect freight forwarders from around the globe, facilitating networking, collaboration, and business opportunities within the logistics and
+                            freight forwarding industry.
+                        </div>
                     </div>
                 </div>
                 <div className="accordion-item wow animate__animated animate__fadeIn">
                     <h5 className="accordion-header" onClick={() => handleToggle(2)}>
-                        <button className={isActive.key == 2 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>Can I cancel or change
-                            my order?</button>
+                        <button className={isActive.key == 2 ? 'accordion-button text-heading-5 ' : 'accordion-button text-heading-5 collapsed'}>
+                            What benefits do members receive by joining your network?
+                        </button>
                     </h5>
-                    <div className={isActive.key == 2 ? "accordion-collapse" : "accordion-collapse collapse"}>
-                        <div className="accordion-body">Aut architecto consequatur sit error nemo sed
-                            dolorum suscipit 33 impedit dignissimos ut velit blanditiis qui quos magni
-                            id dolore dignissimos. Sit ipsa consectetur et sint harum et dicta
-                            consequuntur id cupiditate perferendis qui quisquam enim. Vel autem illo id
-                            error excepturi est dolorum voluptas qui maxime consequatur et culpa
-                            quibusdam in iusto vero sit amet Quis.</div>
+                    <div className={isActive.key == 2 ? 'accordion-collapse' : 'accordion-collapse collapse'}>
+                        <div className="accordion-body">
+                            Members gain access to a global network of freight forwarders, detailed information on Rates, Tariffs, and SOPs, and additional features such as container buying and
+                            selling, all aimed at enhancing their operational efficiency and business reach.
+                        </div>
                     </div>
                 </div>
                 <div className="accordion-item wow animate__animated animate__fadeIn">
                     <h5 className="accordion-header" onClick={() => handleToggle(3)}>
-                        <button className={isActive.key == 3 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>I have promotional or
-                            discount code?</button>
+                        <button className={isActive.key == 3 ? 'accordion-button text-heading-5 ' : 'accordion-button text-heading-5 collapsed'}>
+                            How can I become a member and join your network?
+                        </button>
                     </h5>
-                    <div className={isActive.key == 3 ? "accordion-collapse" : "accordion-collapse collapse"}>
-                        <div className="accordion-body">Eos nostrum aperiam ab enim quas sit voluptate fuga.
-                            Ea aperiam voluptas a accusantium similique 33 alias sapiente non vitae
-                            repellat et dolorum omnis eos beatae praesentium id sunt corporis. Aut nisi
-                            blanditiis aut corrupti quae et accusantium doloribus sed tempore libero a
-                            dolorum beatae.</div>
+                    <div className={isActive.key == 3 ? 'accordion-collapse' : 'accordion-collapse collapse'}>
+                        <div className="accordion-body">
+                            Eos nostrum aperiam ab enim quas sit voluptate fuga. You can join our network by signing up through our website. Once registered, you'll be able to connect with other
+                            freight forwarders worldwide and access all our resources and services.
+                        </div>
                     </div>
                 </div>
                 <div className="accordion-item wow animate__animated animate__fadeIn">
                     <h5 className="accordion-header" onClick={() => handleToggle(4)}>
-                        <button className={isActive.key == 4 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>What are the delivery
-                            types you use?</button>
+                        <button className={isActive.key == 4 ? 'accordion-button text-heading-5 ' : 'accordion-button text-heading-5 collapsed'}>
+                            How does your platform help in optimizing logistics operations?
+                        </button>
                     </h5>
-                    <div className={isActive.key == 4 ? "accordion-collapse" : "accordion-collapse collapse"}>
-                        <div className="accordion-body">Et beatae quae ex minima porro aut nihil quia sed
-                            optio dignissimos et voluptates deleniti et nesciunt veritatis et suscipit
-                            quod. Est sint voluptate id unde nesciunt non deleniti debitis. Ut dolores
-                            tempore vel placeat nemo quo enim reprehenderit eos corrupti maiores et
-                            minima quaerat. Quo sequi eaque eum similique sint et autem perspiciatis cum
-                            Quis exercitationem quo quos excepturi non ducimus ducimus eos natus velit.
+                    <div className={isActive.key == 4 ? 'accordion-collapse' : 'accordion-collapse collapse'}>
+                        <div className="accordion-body">
+                            We provide up-to-date information on Rates, Tariffs, and SOPs for container movements, enabling members to plan and execute their logistics efficiently, reducing delays and
+                            costs.
                         </div>
                     </div>
                 </div>
                 <div className="accordion-item wow animate__animated animate__fadeIn">
                     <h5 className="accordion-header" onClick={() => handleToggle(5)}>
-                        <button className={isActive.key == 5 ? "accordion-button text-heading-5 " : "accordion-button text-heading-5 collapsed"}>How can I pay for my
-                            purchases?</button>
+                        <button className={isActive.key == 5 ? 'accordion-button text-heading-5 ' : 'accordion-button text-heading-5 collapsed'}>
+                            Can I access a list of alliance depots and their details?
+                        </button>
                     </h5>
-                    <div className={isActive.key == 5 ? "accordion-collapse" : "accordion-collapse collapse"}>
-                        <div className="accordion-body">Qui quas itaque ut molestias culpa vel culpa
-                            voluptas eos fugit sint ex veritatis totam cum unde maxime! Qui eius fugiat
-                            qui veritatis cumque a nesciunt nemo. Id numquam rerum est molestiae quia ut
-                            nisi architecto a officiis itaque eum quod repellat ut dolorem dolorem aut
-                            ipsam ipsa.</div>
+                    <div className={isActive.key == 5 ? 'accordion-collapse' : 'accordion-collapse collapse'}>
+                        <div className="accordion-body">
+                            Yes, members can access a detailed list of global alliance depots, including information on Rates, Tariffs, and SOPs, by contacting the depots directly through our platform
+                        </div>
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }

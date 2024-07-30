@@ -1,4 +1,4 @@
-import Hero1Slider from "../slider/HeroSlider";
+import Hero1Slider from '../slider/HeroSlider';
 import Link from 'next/link';
 import bannerImage from '../../../../public/assets/imgs/page/homepage1/banner.png';
 
@@ -13,15 +13,15 @@ export default function Hero() {
                                 <p className="font-md color-white mb-15 wow animate__animated animate__fadeIn" data-wow-delay=".0s">
                                     Your Gateway to Global Logistics Excellence
                                 </p>
-                                <h1 className="color-white mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
-                                    Connecting the World’s 
-                                    <br className="d-none d-lg-block" />
-                                    Independent Freight Forwarders
+                                <h1 className="color-white   mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
+                                    Connecting the World’s <br className="d-none d-lg-block" />
+                                    <span> Independent Freight Forwarders</span>
                                 </h1>
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <p className="font-md color-white wow animate__animated animate__fadeInUp mb-20" data-wow-delay=".0s">
-                                            Our experienced team of problem solvers and a commitment to always align with our client’s business goals and objectives is what drives mutual success.
+                                            Join a community dedicated to enhancing the capabilities of independent freight forwarders. Together, we create opportunities for growth and success in the
+                                            global logistics market.
                                         </p>
                                     </div>
                                 </div>
@@ -36,5 +36,5 @@ export default function Hero() {
                 </div>
             </section>
         </>
-    )
+    );
 }

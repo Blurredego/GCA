@@ -1,3 +1,4 @@
+import React from 'react';
 import Layout from '../../(defaults)/components/layout/Layout';
 import Brand1Slider from '../../(defaults)/components/home/Brands';
 import Link from 'next/link';
@@ -6,28 +7,32 @@ export default function Register() {
         <>
             <Layout>
                 <section className="section box-login">
-                    <div className="row align-items-center m-0">
+                    <div className="row align-items-center m-0 px-3">
                         <div className="col-lg-6">
                             <div className="box-login-left">
-                                <h2 className="color-brand-2 wow animate__animated animate__fadeIn mb-10">Create an account</h2>
-                                <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">Describe yourself as clearly so that there are no mistakes</p>
+                                <div className="mb-10 text-center">
+                                    <h2 className="wow animate__animated   animate__fadeIn text-[#034460] lg:text-5xl ">Create an Account</h2>
+                                    <p className="font-md color-grey-500 wow animate__animated animate__fadeIn lg:px-12">
+                                        Sign up now to access exclusive benefits and connect with a global community of independent freight forwarders.
+                                    </p>
+                                </div>
                                 <div className="box-form-login wow animate__animated animate__fadeIn">
                                     <form action="#">
                                         <div className="row  justify-between">
-                                            <div className="col-md-5 ">
+                                            <div className="col-md-5  lg:w-[240px]">
                                                 <div className="form-group">
                                                     <input className="form-control" type="text" placeholder="Full name" />
                                                 </div>
                                             </div>
                                             <div className="col-md-6">
                                                 <div className="form-group">
-                                                    <input className="form-control" name="" type="text" placeholder="Company Name" />
+                                                    <input className="form-control" name="" type="text" placeholder="Phone Number" />
                                                 </div>
                                             </div>
 
                                             <div className="col-md-12">
                                                 <div className="form-group">
-                                                    <input className="form-control" type="email" placeholder="Phone Number *" />
+                                                    <input className="form-control" type="email" placeholder="Email Address*" />
                                                 </div>
                                             </div>
                                             <div className="col-md-4">
@@ -68,7 +73,7 @@ export default function Register() {
                                                     <div className="box-remember">
                                                         <label className="font-xs color-grey-900" htmlFor="rememberme">
                                                             <input id="rememberme" type="checkbox" />
-                                                            By clicking Register button, you agree our terms and policy,
+                                                            Are you Referred by GCA member ?
                                                         </label>
                                                     </div>
                                                 </div>
@@ -94,18 +99,25 @@ export default function Register() {
                         <div className="col-lg-6">
                             <div className="box-login-right">
                                 {/* <div className="quote-shape shape-1" /> */}
-                                <div className="box-info-bottom-img box-info-bottom-img-3 flex flex-col items-start" style={{ width: '291px' }}>
+                                <div className="box-info-bottom-img box-info-bottom-img-3 flex flex-col items-start ">
                                     <div>
                                         <h4 className="color-white mb-15">We have 25 years</h4>
-                                        <p className="font-sm color-white">
+                                        <p className="font-sm color-white ">
                                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
                                         </p>
                                     </div>
                                     <div className="mt-30 wow animate__animated animate__fadeIn">
                                         <Link className="btn btn-link font-sm " href="#" style={{ color: 'white' }}>
                                             View Details
-                                            <span className='bg-white '>
-                                                <svg   style={{ color: 'black' }} className="icon-16 h-10 w-6 text-black " fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <span className="bg-white ">
+                                                <svg
+                                                    style={{ color: 'black' }}
+                                                    className="icon-16 h-10 w-6 text-black "
+                                                    fill="black"
+                                                    stroke="currentColor"
+                                                    viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                                 </svg>
                                             </span>

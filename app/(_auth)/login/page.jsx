@@ -8,25 +8,21 @@ export default function Login() {
             <Layout>
                 <section className="cnt-center section box-login ">
                     <div className="row align-items-center m-0">
-                        <div className="col-lg-6   ">
-                            <div className="box-login-left -pt-48 text-center space-y-5">
+                        <div className="col-lg-6 lg:-mt-44  ">
+                            <div className="box-login-left text-center space-y-5 ">
                                 <h2 className="color-brand-2 mb-40 wow animate__animated animate__fadeIn">Login</h2>
-                                <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">Access to all features. No credit card required.Access to all features. No credit card required.</p>
+                                <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">Securely log in to manage your profile and access personalized features</p>
                                 <div className="box-form-login wow animate__animated animate__fadeIn">
                                     <form action="#">
                                         <div className="form-group">
-                                            <input className="form-control" type="text" placeholder="Email Address *" />
+                                            <input className="form-control" type="text" placeholder="website" />
                                         </div>
                                         <div className="form-group">
                                             <input className="form-control" type="password" placeholder="Enter Your Password" />
                                         </div>
                                         <div className="form-group">
-                                            <div className="d-flex justify-content-between">
-                                                <div className="box-remember">
-                                                    <label className="font-xs color-grey-900" htmlFor="rememberme">
-                                                        <input id="rememberme" type="checkbox" />Remember me
-                                                    </label>
-                                                </div>
+                                            <div className="d-flex justify-content-lg-end">
+                                               
                                                 <div className="box-forgotpass"><Link className="font-xs color-brand-2" href="#">Forgot your password?</Link></div>
                                             </div>
                                         </div>

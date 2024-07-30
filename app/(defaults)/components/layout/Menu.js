@@ -1,11 +1,13 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Menu() {
     return (
         <>
             <ul className="main-menu ">
-                <li >
-                    <Link className="" href="/" title="HOME">Home</Link>
+                <li>
+                    <Link className="" href="/" title="HOME">
+                        Home
+                    </Link>
                     {/* <ul className="sub-menu">
                         <li><Link href="/">Homepage - 1</Link></li>
                         <li><Link href="/index-2">Homepage - 2</Link></li>
@@ -13,8 +15,10 @@ export default function Menu() {
                         <li><Link href="/index-4">Homepage - 4</Link></li>
                     </ul> */}
                 </li>
-                <li><Link href="/pages/about">About Us</Link></li>
-                <li >
+                <li>
+                    <Link href="/pages/about">About Us</Link>
+                </li>
+                <li>
                     <Link href="/pages/services">Services</Link>
                     {/* <div className="sub-menu grid grid-cols-5 gap-4">
                         <div className="menu-col">
@@ -87,7 +91,7 @@ export default function Menu() {
                         </div>
                     </div> */}
                 </li>
-                <li >
+                <li>
                     <Link href="/pages/events">Events</Link>
                     {/* <ul className="sub-menu">
                         <li><Link href="/service-detail">Service Detail</Link></li>
@@ -103,14 +107,16 @@ export default function Menu() {
                         <li><Link href="/404">Error 404</Link></li>
                     </ul> */}
                 </li>
-                <li >
-                    <Link href="#">News</Link>
+                <li>
+                    <Link href="/pages/blog">News</Link>
                     {/* <ul className="sub-menu">
                         <li><Link href="/pages/blog">Blog Details</Link></li>
                     </ul> */}
                 </li>
-                
-                <li><Link href="/pages/contact">Contact us</Link></li>
+
+                <li>
+                    <Link href="/pages/contact">Contact us</Link>
+                </li>
                 {/* <li><Link href="/pages/dashboard">Members</Link></li> */}
             </ul>
         </>
