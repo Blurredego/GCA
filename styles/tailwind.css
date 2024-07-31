@@ -6786,6 +6786,7 @@ textarea.form-control {
   top: 140px;
   left: -100px;
   right: -100px;
+  
   background-color: rgba(31, 20, 15, 1);
   background: url(../public/assets/imgs/page/homepage1/bg-offer.webp) no-repeat top center;
   z-index: 1;

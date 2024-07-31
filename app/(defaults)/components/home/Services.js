@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import networkingImg from '../../../../public/assets/imgs/page/homepage1/networking.png';
-import globalcard from '../../../../public/assets/imgs/page/homepage1/globalcard.png';
 import globalcardService from '../../../../public/assets/imgs/page/homepage1/globalcardservice.png';
 import financial from '../../../../public/assets/imgs/page/homepage1/financial.png';
 import marketing from '../../../../public/assets/imgs/page/homepage1/marketing.png';
@@ -30,7 +29,7 @@ export default function Services() {
                             </Link>
                         </div>
                     </div>
-                    <div className="mt-20 box-background-offer  ">
+                    <div className="mt-20 box-background-offer   ">
                     
                         <div className="bg-under max-[600px]:hidden" />
                         <div className="row gap-4 justify-center justify-self-center">

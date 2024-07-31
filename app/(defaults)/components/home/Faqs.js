@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Accordion from "../elements/Accordion";
 import Link from "next/link";
 
@@ -19,22 +20,31 @@ export default function Faqs() {
                 </p>
                 <div className="box-gallery-faqs">
                   <div className="image-top wow animate__animated animate__fadeIn">
-                    <img
+                    <Image
+                    className="w-fit h-fit"
                       src="/assets/imgs/page/homepage1/img-faq1.webp"
                       alt="Gca FAQs"
+                      width={657}
+                      height={330}
                     />
                   </div>
                   <div className="image-bottom wow animate__animated animate__fadeIn">
                     <div className="image-faq-1">
-                      <img
+                      <Image
+                      className="w-fit h-fit"
                         src="/assets/imgs/page/homepage1/img-faq2.webp"
                         alt="Gca FAQs"
+                        width={457}
+                        height={348}
                       />
                     </div>
                     <div className="image-faq-2 wow animate__animated animate__fadeIn">
-                      <img
+                      <Image
+                      className="w-fit h-fit"
                         src="/assets/imgs/page/homepage1/img-faq3.webp"
                         alt="Gca FAQs"
+                        width={336}
+                        height={343}
                       />
                     </div>
                   </div>
@@ -57,7 +67,7 @@ export default function Faqs() {
                   </Link>
                   <Link
                     className="btn  btn-link-medium wow animate__animated animate__fadeIn"
-                    href="#"
+                    href="/pages/about"
                   >
                     Learn More
                     <svg
