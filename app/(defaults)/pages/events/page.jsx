@@ -104,7 +104,15 @@ const Events = () => {
                     </div>
                 </div>
             </div>
-            <h2 className="color-primary-main cnt-center mt-110  container text-2xl lg:text-xl font-extrabold  ">2024 & 2025 UPCOMING EVENTS</h2>
+            <section className="section cnt-center mt-110 max-md:mt-32 ">
+            <div className=' cun-center text-center h-screen' >
+            <h3 className='font-extrabold'>CONNECT, COLLABORATE, AND GROW </h3>
+            <p className='pt-3'>Join us at our exclusive events designed to foster connections and drive business growth. Network with<br className='max-md:hidden block max-lg:px-2'/> <spna> industry leaders, gain insights from experts, and discover new opportunities to expand your reach in the<br className='max-md:hidden block  max-lg:px-2'/><spna> logistics sector.</spna></spna> </p>
+            <h2 className='text-5xl lg:text-8xl font-extrabold pt-52 color-brand-1'>Coming Soon...</h2>
+            </div>
+
+            </section>
+            {/* <h2 className="color-primary-main cnt-center mt-110  container text-2xl lg:text-xl font-extrabold  ">2024 & 2025 UPCOMING EVENTS</h2>
 
             <section className="section mt-20 max-md:mt-32  ">
                 <div className="cnt-center position-relative container  max-lg:flex max-lg:flex-col-reverse  ">
@@ -251,24 +259,24 @@ const Events = () => {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
-            <section className="section cnt-center mt-110 w-full bg-white p-48 max-md:mt-32 max-md:p-2 ">
+            {/* <section className="section cnt-center mt-110 w-full bg-white p-48 max-md:mt-32 max-md:p-2 ">
                 <div className=" container ">
                     <SliderEvent />
                 </div>
-            </section>
+            </section> */}
 
             {/*  here carouse of video */}
-   <section className='overflow-clip'>
+   {/* <section className='overflow-clip'>
             <EventVideoSlider/>
-   </section>
+   </section> */}
 
 
 
 
 
-            <section className="section cnt-center mt-110 max-md:mt-32 mb-32">
+            {/* <section className="section cnt-center mt-110 max-md:mt-32 mb-32">
             <div className="cnt-center container flex justify-center gap-10 max-md:flex-col ">
                 <div className=" bg-white p-4   lg:w-1/3 h-[218px] shadow-md shadow-black-dark-light rounded-md  flex flex-col justify-between ">
                     <h3 className="text-bold text-lg color-primary-main mb-2">Do you want to participate
@@ -291,7 +299,7 @@ const Events = () => {
                     </Link>
                 </div>
                 </div>
-            </section>
+            </section> */}
         </Layout>
      
     );

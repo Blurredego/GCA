@@ -54,8 +54,7 @@ export default function Accordion() {
                     </h5>
                     <div className={isActive.key == 3 ? 'accordion-collapse' : 'accordion-collapse collapse'}>
                         <div className="accordion-body">
-                            Eos nostrum aperiam ab enim quas sit voluptate fuga. You can join our network by signing up through our website. Once registered, you'll be able to connect with other
-                            freight forwarders worldwide and access all our resources and services.
+                        You can join our network by signing up through our website. Once registered, you'll be able to connect with other freight forwarders worldwide and access all our resources and services.
                         </div>
                     </div>
                 </div>

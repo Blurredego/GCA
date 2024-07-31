@@ -6756,7 +6756,7 @@ textarea.form-control {
 
 .bg-get-quote {
     background-color: rgba(31, 20, 15, 1);
-    background-image: url(../public/assets/imgs/page/homepage1/bg-get-quote.png);
+    background-image: url(../public/assets/imgs/page/homepage1/bg-get-quote.webp);
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -6787,7 +6787,7 @@ textarea.form-control {
   left: -100px;
   right: -100px;
   background-color: rgba(31, 20, 15, 1);
-  background: url(../public/assets/imgs/page/homepage1/bg-offer.png) no-repeat top center;
+  background: url(../public/assets/imgs/page/homepage1/bg-offer.webp) no-repeat top center;
   z-index: 1;
 }
 .box-background-offer .bg-under::before {
@@ -7576,7 +7576,7 @@ input:checked + .slider:before {
 }
 
 .box-pageheader-1 {
-  background: rgba(31, 20, 15, 1) url(../public/assets/imgs/page/about/banner.png) no-repeat top center;
+  background: rgba(31, 20, 15, 1) url(../public/assets/imgs/page/about/banner.webp) no-repeat top center;
   background-size: cover;
   padding: 81px 0px;
 }
@@ -7759,7 +7759,7 @@ input:checked + .slider:before {
 }
 
 .box-login-right {
-  background: url(../public/assets/imgs/page/login/bg-login.png) no-repeat top left;
+  background: url(../public/assets/imgs/page/login/bg-login-leftImg.webp) no-repeat top left;
   background-size: cover;
   height: 917px;
   position: relative;
@@ -7912,7 +7912,7 @@ a.color-brand-2:hover {
   max-width: 50%;
   width: 100%;
   bottom: 0px;
-  background-image: url(../public/assets/imgs/page/blog/banner.png);
+  background-image: url(../public/assets/imgs/page/blog/banner.webp);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
@@ -8536,7 +8536,7 @@ a.color-brand-2:hover {
 }
 
 .box-pageheader-1 {
-    background: rgba(31, 20, 15, 1) url(../public/assets/imgs/page/about/banner.png) no-repeat top center;
+    background: rgba(31, 20, 15, 1) url(../public/assets/imgs/page/about/banner.webp) no-repeat top center;
     background-size: cover;
     padding: 81px 0px;
 }
@@ -8724,7 +8724,7 @@ a.color-brand-2:hover {
 }
 
 .box-login-right {
-    background: url(../public/assets/imgs/page/login/bg-login.png) no-repeat top left;
+    background: url(../public/assets/imgs/page/login/bg-login-leftImg.webp) no-repeat top left;
     background-size: cover;
     height: 917px;
     position: relative;
@@ -8928,7 +8928,7 @@ a.color-brand-2:hover {
     display: none;
   }
   .box-hero-blog {
-    padding-top: 75px;
+    padding-top: 175px;
     padding-bottom: 95px;
   }
   .box-map-contact iframe {
@@ -8992,7 +8992,7 @@ a.color-brand-2:hover {
     max-width: 50%;
     width: 100%;
     bottom: 0px;
-    background-image: url(../public/assets/imgs/page/blog/banner.png);
+    background-image: url(../public/assets/imgs/page/blog/banner.webp);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;
@@ -9726,8 +9726,8 @@ a.color-brand-2:hover {
         display: none;
     }
     .box-hero-blog {
-        padding-top: 75px;
-        padding-bottom: 95px;
+        padding-top: 175px;
+        padding-bottom: 195px;
     }
     .box-map-contact iframe {
         height: 400px;

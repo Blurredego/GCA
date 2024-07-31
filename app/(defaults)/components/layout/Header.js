@@ -1,11 +1,16 @@
+'use client';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Menu from './Menu';
 import ThemeSwitch from '../elements/ThemeSwitch';
 import Image from 'next/image';
-
+import Dropdown from '@/app/(dashboard)/components/Dropdown';
+import { useSelector } from 'react-redux';
+import { getTranslation } from '@/i18n';
 export default function Header({ topBarStyle, handleMobileMenuOpen }) {
     const [scroll, setScroll] = useState(0);
+    const isRtl = useSelector((state) => state.themeConfig.rtlClass) === 'rtl';
+    const { t, i18n } = getTranslation();
     useEffect(() => {
         document.addEventListener('scroll', () => {
             const scrollCheck = window.scrollY > 100;
@@ -14,6 +19,15 @@ export default function Header({ topBarStyle, handleMobileMenuOpen }) {
             }
         });
     });
+    const themeConfig = useSelector((state) => state.themeConfig);
+    const setLocale = (flag) => {
+        if (flag.toLowerCase() === 'ae') {
+            dispatch(toggleRTL('rtl'));
+        } else {
+            dispatch(toggleRTL('ltr'));
+        }
+        router.refresh();
+    };
     return (
         <>
             <div className={topBarStyle ? topBarStyle : ''}>
@@ -22,7 +36,7 @@ export default function Header({ topBarStyle, handleMobileMenuOpen }) {
                         <div className=" flex  justify-between ">
                             <div className="">
                                 {' '}
-                                <Link className="phone-icon mr-45" href="tel:+01-246-357">
+                                <span className="phone-icon mr-45 hover:text-green-500 cursor-pointer" href="tel:+01-246-357">
                                     <svg
                                         fill="none"
                                         className="inline-block"
@@ -41,7 +55,7 @@ export default function Header({ topBarStyle, handleMobileMenuOpen }) {
                                         ></path>
                                     </svg>
                                     Phone: +852 3997 3380 (Any time 24/7)
-                                </Link>
+                                </span>
                                 <Link className="email-icon" href="mailto:contact@transp.eu.com">
                                     <svg
                                         fill="none"
@@ -118,24 +132,35 @@ export default function Header({ topBarStyle, handleMobileMenuOpen }) {
                                 <div className="box-dropdown-cart inline-block">
                                     <span className="icon-list icon-account text-lg">
                                         <span className="arrow-down text-sm text-gray-900">
-                                            <svg
-                                                fill="none"
-                                                stroke="currentColor"
-                                                className="inline-block"
-                                                width={20}
-                                                height={20}
-                                                strokeWidth="1.5"
-                                                viewBox="0 0 24 24"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                aria-hidden="true"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
-                                                ></path>
-                                            </svg>
-                                            English
+                                        <div className="dropdown shrink-0 flex gap-1 justify-center items-center">
+                            <Dropdown
+                                offset={[0, 8]}
+                                placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
+                                btnClassName="block p-2 rounded-full bg-white-light/40 dark:bg-dark/40 hover:text-primary hover:bg-white-light/90 dark:hover:bg-dark/60"
+                                button={i18n.language && <img className="h-5 w-5 rounded-full object-cover" src={`/assets/images/flags/${i18n.language.toUpperCase()}.svg`} alt="flag" />}
+                            >
+                                <ul className="grid w-[280px] grid-cols-2 gap-2 !px-2 font-semibold text-dark dark:text-white-dark dark:text-white-light/90">
+                                    {themeConfig.languageList.map((item) => {
+                                        return (
+                                            <li key={item.code}>
+                                                <button
+                                                    type="button"
+                                                    className={`flex w-full hover:text-primary ${i18n.language === item.code ? 'bg-primary/10 text-primary' : ''}`}
+                                                    onClick={() => {
+                                                        i18n.changeLanguage(item.code);
+                                                        setLocale(item.code);
+                                                    }}
+                                                >
+                                                    <img src={`/assets/images/flags/${item.code.toUpperCase()}.svg`} alt="flag" className="h-5 w-5 rounded-full object-cover" />
+                                                    <span className="ltr:ml-3 rtl:mr-3 font-normal">{item.name}</span>
+                                                </button>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            </Dropdown>
+                                            English 
+                        </div>
                                         </span>
                                     </span>
                                     <div className="dropdown-account">

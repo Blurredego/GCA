@@ -1,4 +1,4 @@
-import ComponentsDashboardFinance from '@/components/dashboard/components-dashboard-finance';
+import ComponentsDashboardFinance from '../dashboard/page';
 import React from 'react';
 const Finance = () => {
   return (

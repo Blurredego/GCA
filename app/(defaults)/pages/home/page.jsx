@@ -12,6 +12,8 @@ const Home = () => {
     return (
         <>
             <title>GCA | Home</title>
+        <section className='overflow-x-hidden'>
+
             <Hero />
             {/* <Brands /> */}
             <Services />
@@ -20,6 +22,7 @@ const Home = () => {
             <Cta1 />
             <Faqs1 />
             {/* <News1 /> */}
+        </section>
         </>
     );
 };

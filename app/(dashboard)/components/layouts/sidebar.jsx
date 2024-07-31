@@ -91,8 +91,7 @@ const Sidebar = () => {
                 <div className="h-full dark:bg-black">
                     <div className="flex items-center justify-between px-3 py-3">
                         <Link href="/" className="main-logo flex shrink-0 items-center">
-                            <img className="ml-[5px] w-8 flex-none" src="/assets/images/logo.svg" alt="logo" />
-                            <span className="align-middle text-2xl font-semibold ltr:ml-1.5 rtl:mr-1.5 dark:text-white-light lg:inline">VRISTO</span>
+                            <img className="ml-[5px] w-24 flex-none" src="/assets/imgs/template/logo.png" alt="logo" />
                         </Link>
 
                         <button
@@ -106,18 +105,19 @@ const Sidebar = () => {
                     <PerfectScrollbar className="relative h-[calc(100vh-80px)]">
                         <ul className="relative space-y-0.5 p-2 py-0 font-semibold">
                             <li className="menu nav-item">
-                                <button type="button" className={`${currentMenu === 'dashboard' ? 'active' : ''} nav-link group w-full`} onClick={() => toggleMenu('dashboard')}>
+                                <Link href={"/dashboard"} type="button" className={`${currentMenu === 'dashboard' ? 'active' : ''} nav-link group w-full`}  >
                                     <div className="flex items-center">
                                         <IconMenuDashboard className="shrink-0 group-hover:!text-primary" />
-                                        <span className="text-black ltr:pl-3 rtl:pr-3 font-normal dark:text-[#506690] dark:group-hover:text-white-dark">{t('dashboard')}</span>
+                                        <span className="text-black ltr:pl-3 rtl:pr-3 font-normal dark:text-[#506690] dark:group-hover:text-white-dark">
+                                        {t('dashboard')}</span>
                                     </div>
 
-                                    <div className={currentMenu !== 'dashboard' ? '-rotate-90 rtl:rotate-90' : ''}>
+                                    {/* <div className={currentMenu !== 'dashboard' ? '-rotate-90 rtl:rotate-90' : ''}>
                                         <IconCaretDown />
-                                    </div>
-                                </button>
+                                    </div> */}
+                                </Link>
 
-                                <AnimateHeight duration={300} height={currentMenu === 'dashboard' ? 'auto' : 0}>
+                                {/* <AnimateHeight duration={300} height={currentMenu === 'dashboard' ? 'auto' : 0}>
                                     <ul className="sub-menu text-gray-500">
                                         <li>
                                             <Link href="/sales">{t('sales')}</Link>
@@ -132,7 +132,7 @@ const Sidebar = () => {
                                             <Link href="/crypto">{t('crypto')}</Link>
                                         </li>
                                     </ul>
-                                </AnimateHeight>
+                                </AnimateHeight> */}
                             </li>
 
                             <h2 className="h2-dashboard -mx-4 mb-1 flex items-center  bg-white-light/30 px-[28px]  font-bold uppercase dark:bg-dark dark:bg-opacity-[0.08]">

@@ -57,7 +57,7 @@ export default function Service() {
                                     <div className="cardImage">
                                         {' '}
                                     
-                                        <Image className="h-fit w-fit" src={"/assets/imgs/page/services/globalcardbackImg.png"} alt="gca" width={446} height={459} />
+                                        <Image className="h-fit w-fit" src={"/assets/imgs/page/services/globalcardbackImg.webp"} alt="gca" width={446} height={459} />
                                             {/* <img src="/assets/imgs/page/services/service1.png" alt="GCA" /> */}
                                     </div>
                                     <div className="cardInfo cursor-pointer">
@@ -72,7 +72,7 @@ export default function Service() {
                                 <div className="cardService">
                                     <div className="cardImage">
                                         {' '}
-                                            <Image className="h-fit w-fit" src={"/assets/imgs/page/services/networkingbackImg.png"} alt="gca" width={446} height={459} />
+                                            <Image className="h-fit w-fit" src={"/assets/imgs/page/services/networkingbackImg.webp"} alt="gca" width={446} height={459} />
                                     </div>
                                     <div className="cardInfo cursor-pointer">
                                         {' '}
@@ -87,7 +87,7 @@ export default function Service() {
                                     <div className="cardImage">
                                         {' '}
                                     
-                                            <Image className="h-fit w-fit" src={"/assets/imgs/page/services/markitingmain.png"} alt="gca" width={446} height={459} />
+                                            <Image className="h-fit w-fit" src={"/assets/imgs/page/services/markitingmain.webp"} alt="gca" width={446} height={459} />
                                     </div>
                                     <div className="cardInfo cursor-pointer">
                                         {' '}
@@ -103,7 +103,7 @@ export default function Service() {
                                     <div className="cardImage">
                                         {' '}
                                     
-                                            <Image className="h-fit w-fit" src={"/assets/imgs/page/services/financemainImg.png"} alt="gca" width={446} height={459} />
+                                            <Image className="h-fit w-fit" src={"/assets/imgs/page/services/financemainImg.webp"} alt="gca" width={446} height={459} />
                                     </div>
                                     <div className="cardInfo cursor-pointer">
                                         {' '}
@@ -119,7 +119,7 @@ export default function Service() {
                                     <div className="cardImage">
                                         {' '}
                                      
-                                           <Image className="h-fit w-fit" src={"/assets/imgs/page/services/insurancemian.png"} alt="Insurance" width={43} height={43} />
+                                           <Image className="h-fit w-fit" src={"/assets/imgs/page/services/insurancemian.webp"} alt="Insurance"width={446} height={459} />
                                     </div>
                                     <div className="cardInfo cursor-pointer">
                                         {' '}
@@ -134,7 +134,7 @@ export default function Service() {
                                 <div className="cardService">
                                     <div className="cardImage">
                                         {' '}
-                                     <Image className="h-fit w-fit" src={"/assets/imgs/page/services/insurancemain.png"} alt="InsuranceUpdate" width={446} height={459} />
+                                     <Image className="h-fit w-fit" src={"/assets/imgs/page/services/insurancemain.webp"} alt="InsuranceUpdate" width={446} height={459} />
                                     </div>
                                     <div className="cardInfo cursor-pointer ">
                                         {' '}
@@ -241,12 +241,7 @@ export default function Service() {
                                                 <Link className="btn btn-brand-1-big text-nowrap " href="#">
                                                     Send Message
                                                 </Link>
-                                                <Link className="btn btn-link-medium text-nowrap" href="/contact">
-                                                    Contact Us
-                                                    <svg className="icon-16 ml-5 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </Link>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -317,7 +312,7 @@ export default function Service() {
                                         </div>
                                         <div className="info-how">
                                             <h5 className="color-brand-2">Membership Granted</h5>
-                                            <p className="font-md color-grey-700">Ensure your payment is processed and verified.</p>
+                                            <p className="font-md color-grey-700">Officially receive your membership status and benefits.</p>
                                         </div>
                                     </li>
                                 </ul>

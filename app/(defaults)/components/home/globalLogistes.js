@@ -6,21 +6,21 @@ export default function Info() {
             <section className="section mt-85">
                 <div className="cnt-center container">
                     <div className="flex flex-col items-center text-center">
-                        <Image className="mb-10 " src="/assets/imgs/template/logo.png" alt="transp" width={119.73} height={52} />
+                        <Image className="mb-10 " src="/assets/imgs/template/logo.png" alt="GCA" width={119.73} height={52} />
                         <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Delivering Results for Industry Leaders</p>
                         <h2 className="color-primary-main wow animate__animated animate__fadeIn mb-20 mt-3">
                             Enhancing Global Logistics and
                             <br className="d-none d-lg-block" />
-                            Freight Forwarding Networks
+                            <span> Freight Forwarding Networks</span>
                         </h2>
                     </div>
                     <div className="row mt-50 align-items-center ">
                         <div className="col-xl-7 col-lg-6 mb-30">
                             <div className="box-images-pround">
                                 <div className="box-images wow animate__animated animate__fadeIn">
-                                    <img className="img-main" src="/assets/imgs/page/homepage1/img1.png" alt="transp" />
+                                    <img className="img-main" src="/assets/imgs/page/homepage1/img1.webp" alt="GCA" />
                                     <div className="image-2 shape-3">
-                                        <img src="/assets/imgs/page/homepage1/vector.png" alt="transp" />
+                                        <Image className='w-fit h-fit wow animate__animated animate__fadeIn  ' src="/assets/imgs/page/homepage1/vector.png" alt="GCA" width={758}  height={619 }/>
                                     </div>
                                 </div>
                             </div>

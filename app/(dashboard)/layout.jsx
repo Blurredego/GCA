@@ -1,4 +1,4 @@
-import ComponentsDashboardSales from './components/dashboard/components-dashboard-sales';
+// import ComponentsDashboardSales from './components/dashboard/components-dashboard-sales';
 import ContentAnimation from '../../components/layouts/content-animation';
 import Footer from '../../components/layouts/footer';
 import Header from '../../components/layouts/header';
@@ -8,7 +8,7 @@ import ScrollToTop from '../../components/layouts/scroll-to-top';
 import Setting from '../../components/layouts/setting';
 import Sidebar from './components/layouts/sidebar';
 import Portals from '../../components/portals';
-
+import Dashboard from './dashboard/page'
 export default function DefaultLayout({ children }) {
     return (
         <>
@@ -32,7 +32,7 @@ export default function DefaultLayout({ children }) {
 
                         {/* BEGIN CONTENT AREA */}
                         <ContentAnimation>
-                            {!children && <ComponentsDashboardSales />}
+                            {!children && <Dashboard />}
                             {children}
                         </ContentAnimation>
                         {/* END CONTENT AREA */}

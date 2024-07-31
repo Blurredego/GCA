@@ -1,15 +1,15 @@
-import BrandSlider from '../../components/home/Brands';
-import Link from 'next/link';
+// import BrandSlider from '../../components/home/Brands';
+// import Link from 'next/link';
 import Layout from '../../components/layout/Layout';
-import BlogLinkSLider from '../../components/slider/BlogLinkSlider';
+// import BlogLinkSLider from '../../components/slider/BlogLinkSlider';
 export default function Blog() {
     return (
         <Layout>
             <>
-                <section className="section  position-relative" style={{ backgroundColor: 'rgba(243, 243, 243, 1)' }}>
-                    <div className="cnt-center box-hero-blog position-relative container">
-                        <div className="row">
-                            <div className="col-lg-6 col-md-7 max-md:py-10">
+                <section className="section lg:h-[460px] position-relative" style={{ backgroundColor: 'rgba(243, 243, 243, 1)' }}>
+                    <div className="cnt-center   position-relative container">
+                        <div className="row  h-[460px] max-md:h-52 " >
+                            <div className="col-lg-6 col-md-7 flex flex-col justify-center  max-md:py-10">
                                 <h6 className="color-brand-2 mb-15 wow animate__animated animate__fadeIn">Don’t miss the trending</h6>
                                 <h2 className="color-primary-main mb-25 wow animate__animated animate__fadeIn">Latest News &amp; Blog</h2>
                                 <p className="font-md-color-grey-900 wow animate__animated animate__fadeIn">

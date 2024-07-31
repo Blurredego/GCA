@@ -20,20 +20,20 @@ export default function Faqs() {
                 <div className="box-gallery-faqs">
                   <div className="image-top wow animate__animated animate__fadeIn">
                     <img
-                      src="/assets/imgs/page/homepage1/img-faq1.png"
+                      src="/assets/imgs/page/homepage1/img-faq1.webp"
                       alt="Gca FAQs"
                     />
                   </div>
                   <div className="image-bottom wow animate__animated animate__fadeIn">
                     <div className="image-faq-1">
                       <img
-                        src="/assets/imgs/page/homepage1/img-faq2.png"
+                        src="/assets/imgs/page/homepage1/img-faq2.webp"
                         alt="Gca FAQs"
                       />
                     </div>
                     <div className="image-faq-2 wow animate__animated animate__fadeIn">
                       <img
-                        src="/assets/imgs/page/homepage1/img-faq3.png"
+                        src="/assets/imgs/page/homepage1/img-faq3.webp"
                         alt="Gca FAQs"
                       />
                     </div>
@@ -51,7 +51,7 @@ export default function Faqs() {
                 <div className="mt-20 flex ">
                   <Link
                     className="btn btn-brand-1-big mr-20 wow animate__animated animate__fadeIn"
-                    href="/contact"
+                    href="/pages/contact"
                   >
                     Contact Us
                   </Link>

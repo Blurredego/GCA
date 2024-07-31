@@ -1,6 +1,6 @@
 import Hero1Slider from '../slider/HeroSlider';
 import Link from 'next/link';
-import bannerImage from '../../../../public/assets/imgs/page/homepage1/banner.png';
+import bannerImage from '../../../../public/assets/imgs/page/homepage1/banner.webp';
 
 export default function Hero() {
     return (

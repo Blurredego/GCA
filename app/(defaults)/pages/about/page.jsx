@@ -38,11 +38,11 @@ export default function About() {
                         <div className="col-lg-6 position-relative max-lg:mb-36 ">
                             <div className="row align-items-end lg:gap-4">
                                 <div className="lg:w-[38%] col-md-5 col-sm-5 ">
-                                <img className=' wow animate__animated animate__fadeIn mb-20' src="/assets/imgs/page/about/img-about-1-1.png" alt="GCA"  />
-                                   <img className=' wow animate__animated animate__fadeIn' src="/assets/imgs/page/about/img-about-1-2.png" alt="GCA"  />
+                                <img className=' wow animate__animated animate__fadeIn mb-20' src="/assets/imgs/page/about/img-about-1-1.webp" alt="GCA"  />
+                                   <img className=' wow animate__animated animate__fadeIn' src="/assets/imgs/page/about/img-about-1-2.webp" alt="GCA"  />
                                 </div>
                                 <div className="col-lg-7 col-md-7 col-sm-7">
-                                <img className='w-fit h-fit wow animate__animated animate__fadeIn' src="/assets/imgs/page/about/img-about-1-3.png" alt="GCA"  />
+                                <img className='w-fit h-fit wow animate__animated animate__fadeIn' src="/assets/imgs/page/about/img-about-1-3.webp" alt="GCA"  />
                                 </div>
                             </div>
                             <div className="quote-center shape-2" />
@@ -55,7 +55,7 @@ export default function About() {
                 <div className="container cnt-center">
                     <div className="row align-items-center item-about-2">
                         <div className="col-lg-6 position-relative">
-                        <Image className='w-fit h-fit wow animate__animated animate__fadeIn' src="/assets/imgs/page/about/img-about-2-1.png" alt="GCA" width={774} height={541} />
+                        <Image className='w-fit h-fit wow animate__animated animate__fadeIn' src="/assets/imgs/page/about/img-about-2-1.webp" alt="GCA" width={774} height={541} />
                             <div className="quote-center shape-2" />
                         </div>
                         <div className="col-lg-6">
@@ -85,13 +85,13 @@ export default function About() {
                             </div>
                         </div>
                         <div className="col-lg-6 position-relative">
-                            <Image className='w-fit h-fit wow animate__animated animate__fadeIn' src="/assets/imgs/page/about/img-about-2-2.png" alt="GCA" width={774} height={541} />
+                            <Image className='w-fit h-fit wow animate__animated animate__fadeIn' src="/assets/imgs/page/about/img-about-2-2.webp" alt="GCA" width={774} height={541} />
                             <div className="quote-center shape-2" />
                         </div>
                     </div>
                     <div className="row align-items-center item-about-2">
                         <div className="col-lg-6 position-relative">
-                        <Image className='w-fit h-fit wow animate__animated animate__fadeIn' src="/assets/imgs/page/about/img-about-2-3.png" alt="GCA" width={774} height={541} />
+                        <Image className='w-fit h-fit wow animate__animated animate__fadeIn' src="/assets/imgs/page/about/img-about-2-3.webp" alt="GCA" width={774} height={541} />
                             <div className="quote-center shape-2" />
                         </div>
                         <div className="col-lg-6">
@@ -106,6 +106,14 @@ export default function About() {
                     </div>
                 </div>
             </section>
+            <section className="section mt-55 bg-1 position-relative py-20">
+            <div className="container cnt-center color-main text-center space-y-3">
+                <h3 className='text-white'>SHORT OF CUSTOMER?</h3>
+                <h4 className='text-white font-normal'>Welcome to Join GCA Geo Cargo Alliance</h4>
+            </div>
+
+            </section>
+            
             {/* Proud to Deliver Excellence Every Time Section */}
             {/* <section className="section mt-55 bg-1 position-relative pt-90 pb-90">
                 <div className="container cnt-center">

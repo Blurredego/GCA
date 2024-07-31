@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import networkingImg from '../../../../public/assets/imgs/page/homepage1/networking.png';
 import globalcard from '../../../../public/assets/imgs/page/homepage1/globalcard.png';
+import globalcardService from '../../../../public/assets/imgs/page/homepage1/globalcardservice.png';
 import financial from '../../../../public/assets/imgs/page/homepage1/financial.png';
 import marketing from '../../../../public/assets/imgs/page/homepage1/marketing.png';
 import gca from '../../../../public/assets/imgs/page/homepage1/GCA.png';
@@ -36,9 +37,7 @@ export default function Services() {
                             <div className="lg:w-[30%]  col-md-5 wow animate__animated animate__fadeIn">
                                 <div className="card-offer hover-up">
                                     <div className="card-image ">
-                                        <div className="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-[#DE2910]  ">
-                                            <Image className="h-fit w-fit" src={globalcard.src} alt="gca" width={100} height={100} />
-                                        </div>
+                                            <Image className="h-fit w-fit" src={globalcardService.src} alt="gca" width={100} height={100} />
                                     </div>
                                     <div className="card-info">
                                         <h5 className=" mb-15">Global Reach</h5>

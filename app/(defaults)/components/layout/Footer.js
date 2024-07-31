@@ -36,7 +36,7 @@ export default function Footer1({}) {
                                         <Link href="/pages/events">Events</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">News</Link>
+                                        <Link href="/pages/blogs">News</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -79,7 +79,7 @@ export default function Footer1({}) {
                                     <Link className="icon-socials icon-facebook " href="https://web.facebook.com/gcahkg" style={{ color: 'black' }} />
                                     <Link className="icon-socials icon-instagram" href="https://instagram.com/gcahkg" style={{ color: 'black' }} />
                                     <Link className="icon-socials icon-twitter" href="https://x.com/gcahkg" style={{ color: 'black' }} />
-                                    <Link className="icon-socials icon-youtube" href="https://www.linkedin.com/company/gcahkg" style={{ color: 'black' }} />
+                                    {/* <Link className="icon-socials icon-youtube" href="https://www.linkedin.com/company/gcahkg" style={{ color: 'black' }} /> */}
                                     {/* <Link className="icon-socials icon-skype" href="#"  style={{color:'black'}}/> */}
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ export default function Footer1({}) {
                         <div className="footer-bottom">
                             <div className="row align-items-center">
                                 <div className="col-lg-6 col-md-12 text-lg-start text-center">
-                                    <span className=" font-md">©GCA Official {new Date().getFullYear()}. All right reversed.</span>
+                                    <span className=" font-md">©GCA Official {new Date().getFullYear()}. All rights reserved.</span>
                                 </div>
                                 <div className="col-lg-6 col-md-12 text-lg-end text-center">
                                     <ul className="menu-bottom">
