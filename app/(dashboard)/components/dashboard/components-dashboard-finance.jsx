@@ -1,12 +1,19 @@
 // components/Overview.js
 import React from 'react';
 import ComponentsDashboardSales from './components-dashboard-sales';
+import Image from 'next/image';
+import Users from '../../../../public/assets/images/users.svg';
+import Members from '../../../../public/assets/images/members.svg';
+import Invoices from '../../../../public/assets/images/invoices.svg';
+import Applications from '../../../../public/assets/images/applications.svg';
 
 const StatCard = ({ icon, total, title, items, bgColor }) => (
   <div className={`${bgColor} rounded-lg p-5 flex-1`}>
     <div className="flex items-center mb-4">
-      <div className={`${icon.bg} rounded-full p-2 mr-3`}>
-        <span className="text-white text-xl">{icon.symbol}</span>
+      <div className={` mr-3`}>
+        <span className="text-white text-xl">
+          <Image className='w-fit h-fit' src={icon} alt="icon" width={62} height={62} />
+        </span>
       </div>
       <div>
         <div className="text-2xl font-bold">{total}</div>
@@ -15,8 +22,8 @@ const StatCard = ({ icon, total, title, items, bgColor }) => (
     </div>
     {items.map((item, index) => (
       <div key={index} className="flex justify-between items-center mb-2">
-        <span className="text-sm text-gray-600">{item.label}</span>
-        <div className={`${item.bg} rounded px-5 py-1 text-sm font-medium ${item.textColor}`}>
+        <span className="text-sm text-gray-600 font-bold">{item.label}</span>
+        <div className={`${item.bg} rounded px-5  py-1 text-sm font-bold ${item.textColor}`}>
           {item.value}
         </div>
       </div>
@@ -27,7 +34,7 @@ const StatCard = ({ icon, total, title, items, bgColor }) => (
 const Overview = () => {
   const data = [
     {
-      icon: { symbol: '👥', bg: 'bg-pink-500' },
+      icon: Users,
       total: '2k',
       title: 'All Users',
       bgColor: 'bg-[#FFE2E5]',
@@ -37,7 +44,7 @@ const Overview = () => {
       ],
     },
     {
-      icon: { symbol: '📄', bg: 'bg-yellow-500' },
+      icon: Applications,
       total: '1k',
       title: 'All Application',
       bgColor: 'bg-[#FFF4DE]',
@@ -47,7 +54,7 @@ const Overview = () => {
       ],
     },
     {
-      icon: { symbol: '📋', bg: 'bg-green-500' },
+      icon: Invoices,
       total: '2k',
       title: 'All Invoices',
       bgColor: 'bg-[#DCFCE7]',
@@ -58,7 +65,7 @@ const Overview = () => {
       ],
     },
     {
-      icon: { symbol: '👤', bg: 'bg-purple-500' },
+      icon: Members,
       total: '1k',
       title: 'Active Members',
       bgColor: 'bg-[#F3E8FF]',
@@ -71,20 +78,21 @@ const Overview = () => {
 
   return (
     <>
-
-    <div className="p-6  mx-auto panel">
-      <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold">Overview</h2>
-        <div className="bg-red-500 text-white px-3 py-1 rounded-full text-sm">
-          Last 30 days →
+    
+      <div className="p-6 mx-auto panel">
+        <div className="flex justify-between items-center mb-6">
+          <h2 className="text-2xl font-bold">Overview</h2>
+          <select className="bg-red-500 text-white px-3 py-1 rounded-full text-sm">
+            <option>Last 7 days</option>
+            <option>Last 30 days</option>
+          </select>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {data.map((card, index) => (
+            <StatCard key={index} {...card} />
+          ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        {data.map((card, index) => (
-          <StatCard key={index} {...card} />
-        ))}
-      </div>
-    </div>
       <ComponentsDashboardSales />
     </>
   );

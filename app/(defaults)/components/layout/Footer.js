@@ -65,7 +65,7 @@ export default function Footer1({}) {
                                     </li>
                                     <li>
                                         {' '}
-                                         +852 3997 3380 (Any time 24/7)
+                                         +852 6932 7488 (Any time 24/7)
                                     </li>
                                     <li>
                                         {' '}

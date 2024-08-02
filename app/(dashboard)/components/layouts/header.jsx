@@ -145,6 +145,7 @@ const Header = () => {
     const [search, setSearch] = useState(false);
 
     return (
+        <main className={semidark ? 'dark' : ''}>
         <header className={`z-40 ${themeConfig.semidark && themeConfig.menu === 'horizontal' ? 'dark' : ''}`}>
             <div className="shadow-sm">
                 <div className="relative flex w-full items-center  px-4 py-2.5   dark:bg-black" >
@@ -980,6 +981,7 @@ const Header = () => {
                 </ul>
             </div>
         </header>
+        </main>
     );
 };
 

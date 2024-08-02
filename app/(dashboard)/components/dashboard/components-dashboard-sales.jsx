@@ -13,6 +13,12 @@ const ComponentsDashboardSales = () => {
     useEffect(() => {
         setIsMounted(true);
     }, []);
+    const [selectedPeriod, setSelectedPeriod] = useState('Weekly');
+
+    const handlePeriodChange = (period) => {
+        setSelectedPeriod(period);
+        // Additional functionality for period change can be added here
+    };
 
     //Revenue Chart
     const revenueChart = {
@@ -164,65 +170,57 @@ const ComponentsDashboardSales = () => {
         },
     };
 
-
     return (
         <>
-            <div>
-                {/* <ul className="flex space-x-2 rtl:space-x-reverse">
-                    <li>
-                        <Link href="/" className="text-primary hover:underline">
-                            Dashboard
-                        </Link>
-                    </li>
-                    <li className="before:content-['/'] ltr:before:mr-2 pb-2 rtl:before:ml-2">
-                        <span>Sales</span>
-                    </li>
-                </ul> */}
+            <div className="pt-5">
+                <div className="mb-6 grid gap-6 ">
+                    <div className="panel h-full ">
+                        <div className="mb-5 flex items-center justify-between dark:text-white-light">
+                            <select className="rounded-lg bg-red-500 px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-red-300">
+                                <option className="bg-gray-200 text-black">All Users</option>
+                                <option className="bg-gray-200 text-black">New Users</option>
+                                <option className="bg-gray-200 text-black">Returning Users</option>
+                            </select>
 
-                <div className="pt-5">
-                    <div className="mb-6 grid gap-6 ">
-                        <div className="panel h-full ">
-                            <div className="mb-5 flex items-center justify-between dark:text-white-light">
-                                <h5 className="h5-dashboard text-lg ">Revenue</h5>
-                                <div className="dropdown">
-                                    <Dropdown
-                                        offset={[0, 1]}
-                                        placement={`${isRtl ? 'bottom-start' : 'bottom-end'}`}
-                                        button={<IconHorizontalDots className="text-black/70 hover:!text-primary dark:text-white/70" />}
-                                    >
-                                        <ul>
-                                            <li>
-                                                <button type="button">Weekly</button>
-                                            </li>
-                                            <li>
-                                                <button type="button">Monthly</button>
-                                            </li>
-                                            <li>
-                                                <button type="button">Yearly</button>
-                                            </li>
-                                        </ul>
-                                    </Dropdown>
-                                </div>
-                            </div>
-                            <p className="text-lg dark:text-white-light/90">
-                                Total Profit <span className="ml-2 text-primary">$10,840</span>
-                            </p>
-                            <div className="relative">
-                                <div className="rounded-lg bg-white dark:bg-black">
-                                    {isMounted ? (
-                                        <ReactApexChart series={revenueChart.series} options={revenueChart.options} type="area" height={325} width={'100%'} />
-                                    ) : (
-                                        <div className="grid min-h-[325px] place-content-center bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08] ">
-                                            <span className="inline-flex h-5 w-5 animate-spin rounded-full  border-2 border-black !border-l-transparent dark:border-white"></span>
-                                        </div>
-                                    )}
-                                </div>
+                            <div className="flex space-x-1">
+                                <button
+                                    type="button"
+                                    className={`rounded-lg  px-4 py-2 text-sm ${selectedPeriod === 'Daily' ? 'bg-gray-300 text-gray-500' : 'bg-gray-100 text-gray-600'}`}
+                                    onClick={() => handlePeriodChange('Weekly')}
+                                >
+                                    Weekly
+                                </button>
+                                <button
+                                    type="button"
+                                    className={`rounded-lg px-4 py-2 text-sm ${selectedPeriod === 'Weekly' ? 'bg-gray-300 text-gray-500' : 'bg-gray-100 text-gray-600'}`}
+                                    onClick={() => handlePeriodChange('Monthly')}
+                                >
+                                    Monthly
+                                </button>
+                                <button
+                                    type="button"
+                                    className={`rounded-lg  px-4 py-2 text-sm ${selectedPeriod === 'Monthly' ? 'bg-gray-300 text-gray-500' : 'bg-gray-100 text-gray-600'}`}
+                                    onClick={() => handlePeriodChange('Yearly')}
+                                >
+                                    Yearly
+                                </button>
                             </div>
                         </div>
-
+                        <p className="text-lg dark:text-white-light/90">
+                            Total Profit <span className="ml-2 text-primary">$10,840</span>
+                        </p>
+                        <div className="relative">
+                            <div className="rounded-lg bg-white dark:bg-black">
+                                {isMounted ? (
+                                    <ReactApexChart series={revenueChart.series} options={revenueChart.options} type="area" height={325} width={'100%'} />
+                                ) : (
+                                    <div className="grid min-h-[325px] place-content-center bg-white-light/30 dark:bg-dark dark:bg-opacity-[0.08] ">
+                                        <span className="inline-flex h-5 w-5 animate-spin rounded-full  border-2 border-black !border-l-transparent dark:border-white"></span>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
                     </div>
-
-                   
                 </div>
             </div>
         </>

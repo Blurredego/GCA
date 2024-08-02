@@ -279,8 +279,14 @@ hover:text-primary hover:before:!bg-primary dark:before:bg-gray-500 dark:hover:b
     .btn-primary {
         @apply border-primary bg-primary text-white shadow-primary/60;
     }
+    .btn-blue{
+        @apply border-blue bg-blue text-white shadow-blue/60 px-3;
+    }
     .btn-outline-primary {
         @apply border-primary text-primary shadow-none hover:bg-primary hover:text-white;
+    }
+    .btn-outline-blue {
+        @apply border-blue text-blue shadow-none hover:bg-blue hover:text-white ;
     }
 
     .btn-secondary {
@@ -355,6 +361,8 @@ hover:text-primary hover:before:!bg-primary dark:before:bg-gray-500 dark:hover:b
     .badge-outline-dark {
         @apply border-dark text-dark hover:bg-dark-light dark:hover:bg-dark dark:hover:text-white-light;
     }
+
+
 
     /* Form */
     .form-input,
@@ -1147,6 +1155,9 @@ h6 {
 
 .bg-brand-1 {
     background-color: #fec201;
+}
+.red{
+    background-color: #DE2910;
 }
 
 .bg-brand-2 {
@@ -10109,6 +10120,13 @@ a.color-brand-2:hover {
 html {
     scroll-behavior: smooth;
 }
+
+/* for btn padding of dashboar */
+.btn-lg-d{
+    padding-left:  8px;
+    padding-right:8px;
+}
+
 
 /*# sourceMappingURL=style.css.map */
 

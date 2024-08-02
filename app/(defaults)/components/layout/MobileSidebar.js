@@ -80,6 +80,7 @@ export default function Sidebar({ openClass, handleMobileMenuClose }) {
                                         <li>
                                             <Link href="/pages/contact">Contact</Link>
                                         </li>
+                                        {/* <li><Link href="/pages/dashboard">Members</Link></li> */}
                                     </ul>
                                 </nav>
                             </div>
