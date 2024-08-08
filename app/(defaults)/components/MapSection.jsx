@@ -11,6 +11,9 @@ const MapSection = () => {
     if (path.match('register')) {
         return null;
     }
+    if (path.match('membership')) {
+        return null;
+    }
 
     return (
         <div className="section bg-map d-block mt-12">

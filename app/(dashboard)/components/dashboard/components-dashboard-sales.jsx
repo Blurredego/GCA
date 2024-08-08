@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
 import { useSelector } from 'react-redux';
-import Dropdown from '../Dropdown';
-import IconHorizontalDots from '../icon/icon-horizontal-dots';
+
 
 const ComponentsDashboardSales = () => {
     const isDark = useSelector((state) => state.themeConfig.theme === 'dark' || state.themeConfig.isDarkMode);

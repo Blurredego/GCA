@@ -1,8 +1,8 @@
 'use client';
-import IconEdit from '@/components/icon/icon-edit';
-import IconEye from '@/components/icon/icon-eye';
-import IconPlus from '@/components/icon/icon-plus';
-import IconTrashLines from '@/components/icon/icon-trash-lines';
+import IconEdit from '@/public/icon/icon-edit';
+import IconEye from '@/public/icon/icon-eye';
+import IconPlus from '@/public/icon/icon-plus';
+import IconTrashLines from '@/public/icon/icon-trash-lines';
 import {  DataTable } from 'mantine-datatable';
 import { sortBy } from 'lodash';
 import Link from 'next/link';

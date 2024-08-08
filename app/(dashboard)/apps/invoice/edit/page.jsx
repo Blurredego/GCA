@@ -1,9 +1,9 @@
 'use client';
-import IconDownload from '@/components/icon/icon-download';
-import IconEye from '@/components/icon/icon-eye';
-import IconSave from '@/components/icon/icon-save';
-import IconSend from '@/components/icon/icon-send';
-import IconX from '@/components/icon/icon-x';
+import IconDownload from '@/public/icon/icon-download';
+import IconEye from '@/public/icon/icon-eye';
+import IconSave from '@/public/icon/icon-save';
+import IconSend from '@/public/icon/icon-send';
+import IconX from '@/public/icon/icon-x';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 

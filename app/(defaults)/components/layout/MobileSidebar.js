@@ -65,43 +65,17 @@ export default function Sidebar({ openClass, handleMobileMenuClose }) {
                                            
                                         </li>
                                         <li className={isActive.key == 4 ? 'has-children active' : 'has-children'} onClick={() => handleToggle(4)}>
-                                            {/* <span className="menu-expand">
-                                                <svg className="icon-16 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                                                </svg>
-                                            </span> */}
+                                           
                                             <Link href="/pages/blogs">News</Link>
-                                            {/* <ul className={isActive.key == 4 ? 'sub-menu d-block' : 'sub-menu d-none'}>
-                                                <li>
-                                                    <Link href="/blog-single">Blog Details</Link>
-                                                </li>
-                                            </ul> */}
+                                           
                                         </li>
                                         <li>
                                             <Link href="/pages/contact">Contact</Link>
                                         </li>
-                                        {/* <li><Link href="/pages/dashboard">Members</Link></li> */}
                                     </ul>
                                 </nav>
                             </div>
-                            {/* <div className="site-copyright color-grey-400 mt-0">
-                                <div className="box-download-app">
-                                    <p className="font-xs color-grey-900 mb-25">Download our Apps and get extra 15% Discount on your first Order…!</p>
-                                    <div className="mb-25">
-                                        <div className="d-flex">
-                                            <Link className="mr-10" href="#">
-                                                <img src="/assets/imgs/template/appstore-btn.png" alt="transp" />
-                                            </Link>
-                                            <Link href="#">
-                                                <img src="/assets/imgs/template/google-play-btn.png" alt="transp" />
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="mb-0">
-                                    <span className="font-xs color-grey-500">©Transp Official {new Date().getFullYear()}. All right reversed.</span>
-                                </div>
-                            </div> */}
+                          
                         </div>
                     </div>
                 </div>

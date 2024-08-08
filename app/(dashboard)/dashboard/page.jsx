@@ -1,5 +1,5 @@
 import React from 'react'
-import Dashboard from '../components/dashboard/components-dashboard-finance'
+import Dashboard from '../components/dashboard/components-dashboard'
 
 
 const DashboardHome = () => {

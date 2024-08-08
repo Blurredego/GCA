@@ -1,14 +1,14 @@
 'use client';
-import IconFacebook from '@/components/icon/icon-facebook';
-import IconInstagram from '@/components/icon/icon-instagram';
-import IconLayoutGrid from '@/components/icon/icon-layout-grid';
-import IconLinkedin from '@/components/icon/icon-linkedin';
-import IconListCheck from '@/components/icon/icon-list-check';
-import IconSearch from '@/components/icon/icon-search';
-import IconTwitter from '@/components/icon/icon-twitter';
-import IconUser from '@/components/icon/icon-user';
-import IconUserPlus from '@/components/icon/icon-user-plus';
-import IconX from '@/components/icon/icon-x';
+import IconFacebook from '@/public/icon/icon-facebook';
+import IconInstagram from '@/public/icon/icon-instagram';
+import IconLayoutGrid from '@/public/icon/icon-layout-grid';
+import IconLinkedin from '@/public/icon/icon-linkedin';
+import IconListCheck from '@/public/icon/icon-list-check';
+import IconSearch from '@/public/icon/icon-search';
+import IconTwitter from '@/public/icon/icon-twitter';
+import IconUser from '@/public/icon/icon-user';
+import IconUserPlus from '@/public/icon/icon-user-plus';
+import IconX from '@/public/icon/icon-x';
 import { Transition, Dialog } from '@headlessui/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,7 +18,7 @@ import Swal from 'sweetalert2';
 const ComponentsAppsMembers = () => {
     const [addContactModal, setAddContactModal] = useState(false);
 
-    const [value, setValue] = useState('list');
+    const [value, setValue] = useState('grid');
     const [defaultParams] = useState({
         id: null,
         name: '',
@@ -360,11 +360,11 @@ const ComponentsAppsMembers = () => {
                                             <td className="whitespace-nowrap">{contact.phone}</td>
                                             <td>
                                                 <div className="flex items-center justify-center gap-4">
-                                                <button className='btn btn-outline-blue w-full'>
-                                                <Link href="/profile">
+                                                <Link href="/profile" className='btn btn-outline-blue w-full'>
+                                                <button >
                                                  View
-                                                </Link>
                                                  </button>
+                                                </Link>
                                                     {/* <button type="button" className="btn btn-outline-blue px-3" onClick={() => editUser(contact)}>
                                                         Edit
                                                     </button>

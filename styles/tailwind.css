@@ -494,6 +494,22 @@ hover:text-primary hover:before:!bg-primary dark:before:bg-gray-500 dark:hover:b
         @apply border-dark bg-transparent bg-none;
     }
 
+/* input field style */
+.input-Style {
+    @apply h-full w-full border-b border-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-gray-700 outline outline-0 transition-all placeholder-shown:border-gray-200 focus:border-gray-500 focus:outline-0 disabled:border-0 disabled:bg-gray-50 placeholder:opacity-0 focus:placeholder:opacity-100;
+}
+
+.input-style-label {
+    @apply pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-gray-500 transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-placeholder-shown:text-gray-500 peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-gray-500;
+}
+
+/* Add custom styles for pseudo-elements */
+.input-style-label::after {
+    content: '';
+    @apply absolute -bottom-1.5 block w-full scale-x-0 border-b-2 border-gray-500 transition-transform duration-300 peer-focus:scale-x-100 peer-focus:border-gray-900;
+}
+
+
     /* dropdown */
     .dropdown {
         @apply relative;
@@ -521,7 +537,7 @@ hover:text-primary hover:before:!bg-primary dark:before:bg-gray-500 dark:hover:b
     }
     table thead tr,
     table tfoot tr {
-        @apply border-b-0 !bg-[#f6f8fa]  dark:!bg-[#1a2941];
+        @apply border-b-0 !bg-[#de2910]  dark:!bg-[#1a2941];
     }
     table thead tr th,
     table tfoot tr th,

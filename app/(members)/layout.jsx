@@ -4,9 +4,9 @@ import Header from '@/components/layouts/header';
 import MainContainer from '@/components/layouts/main-container';
 import Overlay from '@/components/layouts/overlay';
 import ScrollToTop from '@/components/layouts/scroll-to-top';
-import Sidebar from './components/sidebar';
+import Sidebar from './sidebar';
 import Portals from '@/components/portals';
-import Dashboard from './dashboard/page';
+import MemberProfile from './profile/page'
 export default function DefaultLayout({ children }) {
     return (
         <>
@@ -15,7 +15,6 @@ export default function DefaultLayout({ children }) {
                 <Overlay />
                 <ScrollToTop />
 
-                {/* BEGIN APP SETTING LAUNCHER */}
 
                 <MainContainer>
                     {/* BEGIN SIDEBAR */}
@@ -28,7 +27,7 @@ export default function DefaultLayout({ children }) {
 
                         {/* BEGIN CONTENT AREA */}
                         <ContentAnimation>
-                            {!children && <Dashboard />}
+                            {!children && <MemberProfile />}
                             {children}
                         </ContentAnimation>
                         {/* END CONTENT AREA */}

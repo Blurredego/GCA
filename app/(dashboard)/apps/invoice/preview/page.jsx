@@ -1,9 +1,9 @@
 'use client';
-import IconDownload from '@/components/icon/icon-download';
-import IconEdit from '@/components/icon/icon-edit';
-import IconPlus from '@/components/icon/icon-plus';
-import IconPrinter from '@/components/icon/icon-printer';
-import IconSend from '@/components/icon/icon-send';
+import IconDownload from '@/public/icon/icon-download';
+import IconEdit from '@/public/icon/icon-edit';
+import IconPlus from '@/public/icon/icon-plus';
+import IconPrinter from '@/public/icon/icon-printer';
+import IconSend from '@/public/icon/icon-send';
 import Link from 'next/link';
 import React from 'react';
 
