@@ -511,7 +511,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
   options: {
     draftAndPublish: false;
-    timestamps: true;
   };
   attributes: {
     username: Attribute.String &
@@ -536,6 +535,19 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
     confirmed: Attribute.Boolean & Attribute.DefaultTo<false>;
     blocked: Attribute.Boolean & Attribute.DefaultTo<false>;
     role: Attribute.Relation<'plugin::users-permissions.user', 'manyToOne', 'plugin::users-permissions.role'>;
+    fullName: Attribute.String &
+      Attribute.Required &
+      Attribute.Unique &
+      Attribute.SetMinMaxLength<{
+        minLength: 3;
+      }>;
+    phoneNumber: Attribute.String;
+    country: Attribute.String;
+    state: Attribute.String;
+    city: Attribute.String;
+    website: Attribute.String;
+    confirmPassword: Attribute.Password;
+    referredByGca: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'plugin::users-permissions.user', 'oneToOne', 'admin::user'> & Attribute.Private;

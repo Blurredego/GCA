@@ -1,71 +1,131 @@
-import Layout from "../../(defaults)/components/layout/Layout"
-import Brand1Slider from "../../(defaults)/components/home/Brands"
-import Link from "next/link"
+'use client';
+import Layout from "../../(defaults)/components/layout/Layout";
+import Brand1Slider from "../../(defaults)/components/home/Brands";
+import Link from "next/link";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import { useRouter } from "next/navigation"; // Import useRouter
+
 export default function Login() {
+    const { register, handleSubmit, reset, formState: { errors } } = useForm({
+        defaultValues: {
+            email: "",
+            password: "",
+        },
+    });
+
+    const router = useRouter(); // Initialize useRouter
+
+    const onSubmit = async (data) => {
+        console.log(data);
+        data.identifier = data.email;
+        try {
+            const response = await axios.post(`http://localhost:1337/api/auth/local`, data, {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+            console.log(response);
+
+            if (response.data) {
+                router.push("/"); // Redirect user on successful login
+                reset();
+            }
+        } catch (error) {
+            alert("Invalid email or password");
+        }
+    };
 
     return (
-        <>
-            <Layout>
-                <section className="cnt-center section box-login ">
-                    <div className="row align-items-center m-0">
-                        <div className="col-lg-6 lg:-mt-44  ">
-                            <div className="box-login-left text-center space-y-5 ">
-                                <h2 className="color-brand-2 mb-40 wow animate__animated animate__fadeIn">Login</h2>
-                                <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">Securely log in to manage your profile and access personalized features</p>
-                                <div className="box-form-login wow animate__animated animate__fadeIn">
-                                    <form action="#">
-                                        <div className="form-group">
-                                            <input className="form-control" type="text" placeholder="website" />
-                                        </div>
-                                        <div className="form-group">
-                                            <input className="form-control" type="password" placeholder="Enter Your Password" />
-                                        </div>
-                                        <div className="form-group">
-                                            <div className="d-flex justify-content-lg-end">
-                                               
-                                                <div className="box-forgotpass"><Link className="font-xs color-brand-2" href="#">Forgot your password?</Link></div>
+        <Layout>
+            <section className="cnt-center section box-login">
+                <div className="row align-items-center m-0">
+                    <div className="col-lg-6 lg:-mt-44">
+                        <div className="box-login-left text-center space-y-5">
+                            <h2 className="color-brand-2 mb-40 wow animate__animated animate__fadeIn">Login</h2>
+                            <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">
+                                Securely log in to manage your profile and access personalized features
+                            </p>
+                            <div className="box-form-login wow animate__animated animate__fadeIn">
+                                <form onSubmit={handleSubmit(onSubmit)}>
+                                    <div className="form-group">
+                                        <input
+                                            className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+                                            type="text"
+                                            placeholder="Email"
+                                            {...register("email", {
+                                                required: "Email is required",
+                                                pattern: {
+                                                    value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                                                    message: "Invalid email format"
+                                                }
+                                            })}
+                                        />
+                                        {errors.email && <span className="text-danger">{errors.email.message}</span>}
+                                    </div>
+                                    <div className="form-group">
+                                        <input
+                                            className={`form-control ${errors.password ? 'is-invalid' : ''}`}
+                                            type="password"
+                                            placeholder="Enter Your Password"
+                                            {...register("password", {
+                                                required: "Password is required"
+                                            })}
+                                        />
+                                        {errors.password && <span className="text-danger">{errors.password.message}</span>}
+                                    </div>
+                                    <div className="form-group">
+                                        <div className="d-flex justify-content-lg-end">
+                                            <div className="box-forgotpass">
+                                                <Link className="font-xs color-brand-2" href="#">Forgot your password?</Link>
                                             </div>
                                         </div>
-                                        <div className="form-group mt-24">
-                                            <div className="d-flex align-items-center justify-content-between">
-                                                <div className="box-button-form-login  w-full">
-                                                    <button className="btn btn-brand-1-big mr-20 w-full text-lg" type="submit" defaultValue="Sign In">Login</button>
-                                                </div>
+                                    </div>
+                                    <div className="form-group mt-24">
+                                        <div className="d-flex align-items-center justify-content-between">
+                                            <div className="box-button-form-login w-full">
+                                                <button
+                                                    className="btn btn-brand-1-big mr-20 w-full text-lg"
+                                                    type="submit"
+                                                >
+                                                    Login
+                                                </button>
                                             </div>
-                                                <div className="box-text-form-login text-start my-2 font-normal"><span className="font-xs color-grey-500">Don't Have an Account?</span><Link className="font-xs color-brand-2" href="/register"> Register Now</Link></div>
                                         </div>
-                                    </form>
-                                </div>
+                                        <div className="box-text-form-login text-start my-2 font-normal">
+                                            <span className="font-xs color-grey-500">Don't Have an Account?</span>
+                                            <Link className="font-xs color-brand-2" href="/register"> Register Now</Link>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="box-login-right">
-                                {/* <div className="quote-shape shape-1" /> */}
-                                <div className="box-info-bottom-img box-info-bottom-img-3 flex flex-col items-start" style={{ width: '291px' }}>
-                                    <div>
-                                        <p className="font-sm color-white">
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="box-login-right">
+                            {/* <div className="quote-shape shape-1" /> */}
+                            <div className="box-info-bottom-img box-info-bottom-img-3 flex flex-col items-start" style={{ width: '291px' }}>
+                                <div>
+                                    <p className="font-sm color-white">
                                         Geo Cargo Alliance (GCA) unites independent freight forwarders globally, offering a network that enhances connectivity and delivers key resources for success in logistics.
-                                        </p>
-                                    </div>
-                                    <div className="mt-30 wow animate__animated animate__fadeIn">
-                                        <Link className="btn underline btn-link font-sm " href="#" style={{ color: 'white' }}>
-                                            View Details
-                                            <span className='bg-white '>
-                                                <svg   style={{ color: 'black' }} className="icon-16 h-10 w-6 text-black " fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                </svg>
-                                            </span>
-                                        </Link>
-                                    </div>
+                                    </p>
+                                </div>
+                                <div className="mt-30 wow animate__animated animate__fadeIn">
+                                    <Link className="btn underline btn-link font-sm" href="#" style={{ color: 'white' }}>
+                                        View Details
+                                        <span className="bg-white">
+                                            <svg style={{ color: 'black' }} className="icon-16 h-10 w-6 text-black" fill="black" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg>
+                                        </span>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-               
-                      
-                <Brand1Slider />
-            </Layout>
-        </>
-    )
+                </div>
+            </section>
+            <Brand1Slider />
+        </Layout>
+    );
 }
